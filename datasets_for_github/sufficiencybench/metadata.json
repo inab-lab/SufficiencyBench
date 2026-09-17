@@ -1,0 +1,39 @@
+{
+  "name": "SufficiencyBench",
+  "version": "1.0",
+  "description": "A benchmark for context sufficiency detection in RAG that independently controls context sufficiency and model confidence.",
+  "quadrant_definitions": {
+    "Q1": "Sufficient + Confident",
+    "Q2": "Sufficient + Uncertain",
+    "Q3": "Insufficient + Confident",
+    "Q4": "Insufficient + Uncertain"
+  },
+  "question_types": [
+    "factual",
+    "multi_hop",
+    "comparative",
+    "subjective"
+  ],
+  "model_used_for_pk_test": "meta-llama/Llama-3.1-8B-Instruct",
+  "total_questions": 2780,
+  "total_conditions": 5560,
+  "splits": {
+    "train": 1390,
+    "val": 278,
+    "test": 1112
+  },
+  "quadrant_counts": {
+    "Q2": 2717,
+    "Q4": 2717,
+    "Q1": 63,
+    "Q3": 63
+  },
+  "question_type_counts": {
+    "factual": 781,
+    "multi_hop": 1218,
+    "comparative": 281,
+    "subjective": 500
+  },
+  "length_ratio_mean": 0.9911651418667721,
+  "length_ratio_std": 0.03834830331874213
+}
