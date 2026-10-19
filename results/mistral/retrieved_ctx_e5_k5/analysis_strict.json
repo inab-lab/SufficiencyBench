@@ -1,0 +1,603 @@
+{
+  "model": "mistral",
+  "tag": "e5_k5",
+  "label": "strict",
+  "label_definition": "support label, restricted to questions where support and answer labels agree (yes/no excluded)",
+  "n_train": 2432,
+  "n_test": 1242,
+  "n_train_total": 3000,
+  "n_test_total": 1500,
+  "n_truncated_dropped": {
+    "train": 0,
+    "test": 0
+  },
+  "pos_rate_train": 0.734375,
+  "pos_rate_test": 0.7278582930756844,
+  "support_answer_agreement_test": 0.8789808917197452,
+  "best_layers": {
+    "standard": 13,
+    "csp": 13
+  },
+  "pk_rate_test": 0.2214170692431562,
+  "pk_benchmark_rule_rate_test": 0.24074074074074073,
+  "n_pk1_test": 275,
+  "em_all": 0.1215780998389694,
+  "f1_all": 0.29745234082951055,
+  "acc_contains_all": 0.4106280193236715,
+  "abstention_rate": 0.17713365539452497,
+  "em_by_label": {
+    "sufficient": 0.16592920353982302,
+    "insufficient": 0.0029585798816568047
+  },
+  "support_label_rate_in_subset": 0.7278582930756844,
+  "n_boot": 2000,
+  "methods": {
+    "Standard probe (transfer)": {
+      "kind": "probe",
+      "auroc": 0.7686122165785202,
+      "ci95": [
+        0.7388456255405298,
+        0.7973923183684334
+      ],
+      "auroc_pk0": 0.7595626813611982,
+      "auroc_pk1": 0.79568,
+      "aurc": 0.12922018712784353,
+      "cov_at_risk_5": 0.0853462157809984,
+      "cov_at_risk_10": 0.355877616747182,
+      "kendall_tau_f1": 0.22050932169233844,
+      "kendall_tau_f1_p": 9.939959796908483e-28,
+      "delta_vs_vc": 0.11930702466355969,
+      "delta_vs_vc_ci95": [
+        0.08471855741027273,
+        0.15319048183642317
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.9602116658145117,
+        "train_cov": 0.3248355263157895,
+        "train_prec": 0.9,
+        "target_met": true,
+        "test_coverage": 0.321256038647343,
+        "test_suff_precision": 0.9147869674185464,
+        "em_covered": 0.15288220551378445,
+        "f1_covered": 0.3847158708346457,
+        "acc_contains_covered": 0.5288220551378446,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "CSP probe (transfer)": {
+      "kind": "probe",
+      "auroc": 0.7682489396240247,
+      "ci95": [
+        0.7383022872252256,
+        0.796596678077717
+      ],
+      "auroc_pk0": 0.7551367353518773,
+      "auroc_pk1": 0.79376,
+      "aurc": 0.13001817674382857,
+      "cov_at_risk_5": 0.1529790660225443,
+      "cov_at_risk_10": 0.357487922705314,
+      "kendall_tau_f1": 0.2633889951772724,
+      "kendall_tau_f1_p": 7.669713320742383e-39,
+      "delta_vs_vc": 0.11894374770906424,
+      "delta_vs_vc_ci95": [
+        0.0833910755703547,
+        0.15301324601590716
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.9346704443189344,
+        "train_cov": 0.3145559210526316,
+        "train_prec": 0.9006535947712418,
+        "target_met": true,
+        "test_coverage": 0.32367149758454106,
+        "test_suff_precision": 0.9129353233830846,
+        "em_covered": 0.1890547263681592,
+        "f1_covered": 0.43275739483225906,
+        "acc_contains_covered": 0.582089552238806,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "Standard probe (transfer, plain ctx)": {
+      "kind": "probe",
+      "auroc": 0.7692438602921925,
+      "ci95": [
+        0.7395888997744378,
+        0.7975076017785142
+      ],
+      "auroc_pk0": 0.7596213031626462,
+      "auroc_pk1": 0.7672,
+      "aurc": 0.12949225218721633,
+      "cov_at_risk_5": 0.11674718196457327,
+      "cov_at_risk_10": 0.3639291465378422,
+      "kendall_tau_f1": 0.21612064947950893,
+      "kendall_tau_f1_p": 1.059744905272545e-26,
+      "delta_vs_vc": 0.119938668377232,
+      "delta_vs_vc_ci95": [
+        0.08789190376968749,
+        0.1529567873308665
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.6426039371158022,
+        "train_cov": 0.32648026315789475,
+        "train_prec": 0.9005037783375315,
+        "target_met": true,
+        "test_coverage": 0.33011272141706927,
+        "test_suff_precision": 0.9146341463414634,
+        "em_covered": 0.16341463414634147,
+        "f1_covered": 0.3940783106802891,
+        "acc_contains_covered": 0.5658536585365853,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "CSP probe (transfer, plain ctx)": {
+      "kind": "probe",
+      "auroc": 0.7880360789652825,
+      "ci95": [
+        0.7585253137191059,
+        0.8158036164010043
+      ],
+      "auroc_pk0": 0.7778087170618753,
+      "auroc_pk1": 0.79744,
+      "aurc": 0.12183036907478895,
+      "cov_at_risk_5": 0.16505636070853463,
+      "cov_at_risk_10": 0.3961352657004831,
+      "kendall_tau_f1": 0.252239936759152,
+      "kendall_tau_f1_p": 9.142827209696561e-36,
+      "delta_vs_vc": 0.138730887050322,
+      "delta_vs_vc_ci95": [
+        0.10239604099763201,
+        0.17194481656179275
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.037194333340139635,
+        "train_cov": 0.4420230263157895,
+        "train_prec": 0.9004651162790698,
+        "target_met": true,
+        "test_coverage": 0.45491143317230276,
+        "test_suff_precision": 0.8884955752212389,
+        "em_covered": 0.168141592920354,
+        "f1_covered": 0.3928255890286,
+        "acc_contains_covered": 0.5610619469026549,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "Standard probe (retrained)": {
+      "kind": "probe",
+      "auroc": 0.9182463214117401,
+      "ci95": [
+        0.9016716384577588,
+        0.9335147289960132
+      ],
+      "auroc_pk0": 0.9038846713759514,
+      "auroc_pk1": 0.96336,
+      "aurc": 0.06679914436355328,
+      "cov_at_risk_5": 0.5265700483091788,
+      "cov_at_risk_10": 0.7568438003220612,
+      "kendall_tau_f1": 0.3476062989119935,
+      "kendall_tau_f1_p": 2.4888584671882216e-66,
+      "delta_vs_vc": 0.2689411294967796,
+      "delta_vs_vc_ci95": [
+        0.24278738245739623,
+        0.29349397157683144
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.2909553658499081,
+        "train_cov": 0.7730263157894737,
+        "train_prec": 0.9,
+        "target_met": true,
+        "test_coverage": 0.7608695652173914,
+        "test_suff_precision": 0.8973544973544973,
+        "em_covered": 0.15555555555555556,
+        "f1_covered": 0.36605589374659675,
+        "acc_contains_covered": 0.5058201058201058,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "CSP probe (retrained)": {
+      "kind": "probe",
+      "auroc": 0.9223634602293554,
+      "ci95": [
+        0.9065752725198981,
+        0.9382914731671357
+      ],
+      "auroc_pk0": 0.9119940205762523,
+      "auroc_pk1": 0.9528,
+      "aurc": 0.06655810126879899,
+      "cov_at_risk_5": 0.6119162640901772,
+      "cov_at_risk_10": 0.7584541062801933,
+      "kendall_tau_f1": 0.32709626560444804,
+      "kendall_tau_f1_p": 6.062762560230974e-59,
+      "delta_vs_vc": 0.27305826831439495,
+      "delta_vs_vc_ci95": [
+        0.24652357491181723,
+        0.29853685041068767
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.4788542170980187,
+        "train_cov": 0.7524671052631579,
+        "train_prec": 0.9,
+        "target_met": true,
+        "test_coverage": 0.7391304347826086,
+        "test_suff_precision": 0.9052287581699346,
+        "em_covered": 0.15468409586056645,
+        "f1_covered": 0.37156108019342426,
+        "acc_contains_covered": 0.5098039215686274,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "Verbalized confidence": {
+      "kind": "baseline",
+      "auroc": 0.6493051919149605,
+      "ci95": [
+        0.6248545410566642,
+        0.6744506557321301
+      ],
+      "auroc_pk0": 0.6424729606940821,
+      "auroc_pk1": 0.62552,
+      "aurc": 0.1774364540596135,
+      "cov_at_risk_5": 0.0,
+      "cov_at_risk_10": 0.0,
+      "kendall_tau_f1": 0.2656791123003838,
+      "kendall_tau_f1_p": 2.9984131973465084e-27,
+      "gating": {
+        "threshold": 0.8,
+        "train_cov": 0.3754111842105263,
+        "train_prec": 0.8849945235487404,
+        "target_met": false,
+        "test_coverage": 0.3534621578099839,
+        "test_suff_precision": 0.8952164009111617,
+        "em_covered": 0.22323462414578588,
+        "f1_covered": 0.4393754011723255,
+        "acc_contains_covered": 0.5763097949886105,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "Model answers (no abstention)": {
+      "kind": "baseline",
+      "auroc": 0.6852090642509294,
+      "ci95": [
+        0.6578324364777381,
+        0.7134658816579238
+      ],
+      "auroc_pk0": 0.6840236050453831,
+      "auroc_pk1": 0.654,
+      "aurc": 0.19142026757973787,
+      "cov_at_risk_5": 0.0,
+      "cov_at_risk_10": 0.0,
+      "kendall_tau_f1": 0.41551295000836097,
+      "kendall_tau_f1_p": 2.4478645504802996e-63,
+      "delta_vs_vc": 0.03590387233596892,
+      "delta_vs_vc_ci95": [
+        0.003935787191510907,
+        0.06690765875250189
+      ],
+      "delta_vs_vc_p": 0.022,
+      "gating": {
+        "threshold": 1.0,
+        "train_cov": 0.8305921052631579,
+        "train_prec": 0.8153465346534653,
+        "target_met": false,
+        "test_coverage": 0.822866344605475,
+        "test_suff_precision": 0.8170254403131115,
+        "em_covered": 0.14774951076320939,
+        "f1_covered": 0.35965234116376743,
+        "acc_contains_covered": 0.49902152641878667,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "qpp_top1": {
+      "kind": "qpp",
+      "auroc": 0.5539057181756297,
+      "ci95": [
+        0.5201291120303317,
+        0.590433493208309
+      ],
+      "auroc_pk0": 0.5445525691004485,
+      "auroc_pk1": 0.50736,
+      "aurc": 0.2304829691359962,
+      "cov_at_risk_5": 0.01610305958132045,
+      "cov_at_risk_10": 0.020933977455716585,
+      "kendall_tau_f1": 0.07449871213955697,
+      "kendall_tau_f1_p": 0.00022682910539801796,
+      "delta_vs_vc": -0.09539947373933078,
+      "delta_vs_vc_ci95": [
+        -0.1358426087399561,
+        -0.053237678103448684
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.9305330514907837,
+        "train_cov": 0.013157894736842105,
+        "train_prec": 0.90625,
+        "target_met": true,
+        "test_coverage": 0.01288244766505636,
+        "test_suff_precision": 0.9375,
+        "em_covered": 0.125,
+        "f1_covered": 0.29094742063492063,
+        "acc_contains_covered": 0.5,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "qpp_gap12": {
+      "kind": "qpp",
+      "auroc": 0.4139066345499293,
+      "ci95": [
+        0.3778066138278868,
+        0.45099565904496003
+      ],
+      "auroc_pk0": 0.42623911832810624,
+      "auroc_pk1": 0.37616,
+      "aurc": 0.34445039704210056,
+      "cov_at_risk_5": 0.001610305958132045,
+      "cov_at_risk_10": 0.001610305958132045,
+      "kendall_tau_f1": -0.027902685848582912,
+      "kendall_tau_f1_p": 0.16729085095578233,
+      "delta_vs_vc": -0.23539855736503118,
+      "delta_vs_vc_ci95": [
+        -0.2798927452677348,
+        -0.18959938828458472
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.1095496416091919,
+        "train_cov": 0.0008223684210526315,
+        "train_prec": 1.0,
+        "target_met": true,
+        "test_coverage": 0.0,
+        "test_suff_precision": null,
+        "em_covered": null,
+        "f1_covered": null,
+        "acc_contains_covered": null,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "qpp_mean": {
+      "kind": "qpp",
+      "auroc": 0.5785561868356286,
+      "ci95": [
+        0.5432208453869916,
+        0.6124423210639272
+      ],
+      "auroc_pk0": 0.5629598147551075,
+      "auroc_pk1": 0.54224,
+      "aurc": 0.21961955028559635,
+      "cov_at_risk_5": 0.004830917874396135,
+      "cov_at_risk_10": 0.004830917874396135,
+      "kendall_tau_f1": 0.0765728890328434,
+      "kendall_tau_f1_p": 0.0001507990855467108,
+      "delta_vs_vc": -0.0707490050793319,
+      "delta_vs_vc_ci95": [
+        -0.1104739557774586,
+        -0.03265619736765876
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.9150534391403198,
+        "train_cov": 0.00041118421052631577,
+        "train_prec": 1.0,
+        "target_met": true,
+        "test_coverage": 0.0,
+        "test_suff_precision": null,
+        "em_covered": null,
+        "f1_covered": null,
+        "acc_contains_covered": null,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "qpp_std_nqc": {
+      "kind": "qpp",
+      "auroc": 0.5877755668429596,
+      "ci95": [
+        0.5508967781308051,
+        0.6237449472700256
+      ],
+      "auroc_pk0": 0.5837412433684087,
+      "auroc_pk1": 0.58176,
+      "aurc": 0.22915700246563375,
+      "cov_at_risk_5": 0.017713365539452495,
+      "cov_at_risk_10": 0.021739130434782608,
+      "kendall_tau_f1": 0.07632684873929495,
+      "kendall_tau_f1_p": 0.00015836423436460374,
+      "delta_vs_vc": -0.06152962507200088,
+      "delta_vs_vc_ci95": [
+        -0.10688368220070628,
+        -0.018564757953874193
+      ],
+      "delta_vs_vc_p": 0.006,
+      "gating": {
+        "threshold": 0.03593862814844262,
+        "train_cov": 0.06414473684210527,
+        "train_prec": 0.9038461538461539,
+        "target_met": true,
+        "test_coverage": 0.06280193236714976,
+        "test_suff_precision": 0.8205128205128205,
+        "em_covered": 0.16666666666666666,
+        "f1_covered": 0.38195119421576035,
+        "acc_contains_covered": 0.5512820512820513,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "qpp_sum": {
+      "kind": "qpp",
+      "auroc": 0.5785561868356286,
+      "ci95": [
+        0.5432208453869916,
+        0.6124423210639272
+      ],
+      "auroc_pk0": 0.5629598147551075,
+      "auroc_pk1": 0.54224,
+      "aurc": 0.21961955028559635,
+      "cov_at_risk_5": 0.004830917874396135,
+      "cov_at_risk_10": 0.004830917874396135,
+      "kendall_tau_f1": 0.0765728890328434,
+      "kendall_tau_f1_p": 0.0001507990855467108,
+      "delta_vs_vc": -0.0707490050793319,
+      "delta_vs_vc_ci95": [
+        -0.1104739557774586,
+        -0.03265619736765876
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 4.575267195701599,
+        "train_cov": 0.00041118421052631577,
+        "train_prec": 1.0,
+        "target_met": true,
+        "test_coverage": 0.0,
+        "test_suff_precision": null,
+        "em_covered": null,
+        "f1_covered": null,
+        "acc_contains_covered": null,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "qpp_logreg(5 feats)": {
+      "kind": "qpp",
+      "auroc": 0.7571509923024559,
+      "ci95": [
+        0.7281517677516374,
+        0.784586196549632
+      ],
+      "auroc_pk0": 0.7382927377358306,
+      "auroc_pk1": 0.77088,
+      "aurc": 0.13449027801061933,
+      "cov_at_risk_5": 0.10305958132045089,
+      "cov_at_risk_10": 0.38003220611916266,
+      "kendall_tau_f1": 0.1636768748162901,
+      "kendall_tau_f1_p": 5.464147547937782e-16,
+      "delta_vs_vc": 0.10784580038749536,
+      "delta_vs_vc_ci95": [
+        0.071517869840803,
+        0.1435450952973338
+      ],
+      "delta_vs_vc_p": 0.0,
+      "gating": {
+        "threshold": 0.7728547910939344,
+        "train_cov": 0.42557565789473684,
+        "train_prec": 0.9004830917874396,
+        "target_met": true,
+        "test_coverage": 0.4106280193236715,
+        "test_suff_precision": 0.8901960784313725,
+        "em_covered": 0.15294117647058825,
+        "f1_covered": 0.3717301869080933,
+        "acc_contains_covered": 0.5215686274509804,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    },
+    "e5 cosine(q, ctx)": {
+      "kind": "baseline",
+      "auroc": 0.6532243284285489,
+      "ci95": [
+        0.6213748603967809,
+        0.6867645560674281
+      ],
+      "auroc_pk0": 0.6226270383288879,
+      "auroc_pk1": 0.6904,
+      "aurc": 0.17283572237656036,
+      "cov_at_risk_5": 0.03784219001610306,
+      "cov_at_risk_10": 0.19887278582930756,
+      "kendall_tau_f1": 0.13246408873938662,
+      "kendall_tau_f1_p": 5.5299767527493755e-11,
+      "delta_vs_vc": 0.003919136513588439,
+      "delta_vs_vc_ci95": [
+        -0.03612959408383898,
+        0.04449955865646906
+      ],
+      "delta_vs_vc_p": 0.847,
+      "gating": {
+        "threshold": 0.8942966461181641,
+        "train_cov": 0.2393092105263158,
+        "train_prec": 0.9003436426116839,
+        "target_met": true,
+        "test_coverage": 0.26006441223832527,
+        "test_suff_precision": 0.8854489164086687,
+        "em_covered": 0.15789473684210525,
+        "f1_covered": 0.3859671986676463,
+        "acc_contains_covered": 0.5510835913312694,
+        "em_all": 0.1215780998389694,
+        "f1_all": 0.29745234082951055,
+        "acc_contains_all": 0.4106280193236715
+      }
+    }
+  },
+  "oracle_answer_in_context": {
+    "n_non_yesno": 1242,
+    "auroc_answer_in_context": null,
+    "rate_given_sufficient": 1.0,
+    "rate_given_insufficient": 0.0
+  },
+  "layer_sweep_retrained_standard": {
+    "0": 0.6642110017280201,
+    "1": 0.6647444624810179,
+    "2": 0.6774755197151385,
+    "3": 0.7351874639995811,
+    "4": 0.784576765984186,
+    "5": 0.8096199664868827,
+    "6": 0.8285627323663403,
+    "7": 0.8349773524637377,
+    "8": 0.8360639105618684,
+    "9": 0.8432443577525266,
+    "10": 0.8636762318688799,
+    "11": 0.8660948054668273,
+    "12": 0.8938020369691575,
+    "13": 0.9182463214117401,
+    "14": 0.9314028381421166,
+    "15": 0.9361810755616066,
+    "16": 0.9444480808503953,
+    "17": 0.9399480284861497,
+    "18": 0.9417022307168665,
+    "19": 0.94093313085825,
+    "20": 0.9354577944179714,
+    "21": 0.9331406765460544,
+    "22": 0.9313897470806933,
+    "23": 0.9294849976436089,
+    "24": 0.9274002461119547,
+    "25": 0.921237628946955,
+    "26": 0.921149264282348,
+    "27": 0.9167997591244698,
+    "28": 0.9085458448971042,
+    "29": 0.9014472168403415,
+    "30": 0.8909940042938681,
+    "31": 0.8819578991464628
+  },
+  "notes": [
+    "transfer probes: trained on SufficiencyBench train states (benchmark labels), label-independent",
+    "'plain ctx' rows: same transfer probes on the same passages rendered in benchmark format (no titles, single-space join, whitespace collapsed)",
+    "retrained probes / qpp_logreg are trained on the retrieved train split with THIS label; their train scores are 5-fold out-of-fold (threshold selection only)",
+    "gating threshold: max-coverage threshold with train precision >= 0.90 on 'sufficient'",
+    "pk = gold answer in the first sentence of the closed-book generation and no abstention phrase in that sentence; pk_benchmark_rule = original rule over the whole generation",
+    "em/f1 = SQuAD EM/F1 of the first sentence of the 24-token greedy answer; acc_contains = normalised gold in first line and no abstention"
+  ]
+}

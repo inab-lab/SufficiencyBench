@@ -16,3 +16,20 @@ AUROC: Standard (transfer) 0.801, Standard (retrained) 0.922, CSP (transfer) 0.7
 | CSP (retrained) vs QPP logreg | +0.173 | [+0.147, +0.200] | 0.0005 | 0.0040 |
 | E5 cosine vs VC | -0.036 | [-0.073, +0.001] | 0.0560 | -- |
 | QPP logreg vs VC | +0.063 | [+0.028, +0.096] | 0.0005 | -- |
+
+### mistral (e5_k5, support label, N=1500, B=2000)
+
+AUROC: Standard (transfer) 0.749, Standard (retrained) 0.890, CSP (transfer) 0.719, CSP (retrained) 0.891, QPP logreg 0.751, E5 cosine 0.652, VC 0.609
+
+| Comparison | Delta AUROC | 95% CI | p | Holm p |
+|---|---|---|---|---|
+| Standard (transfer) vs E5 cosine | +0.096 | [+0.058, +0.134] | 0.0005 | 0.0040 |
+| CSP (transfer) vs E5 cosine | +0.067 | [+0.028, +0.106] | 0.0005 | 0.0040 |
+| Standard (retrained) vs E5 cosine | +0.238 | [+0.207, +0.270] | 0.0005 | 0.0040 |
+| CSP (retrained) vs E5 cosine | +0.238 | [+0.205, +0.271] | 0.0005 | 0.0040 |
+| Standard (transfer) vs QPP logreg | -0.003 | [-0.037, +0.032] | 1.0000 | 1.0000 |
+| CSP (transfer) vs QPP logreg | -0.032 | [-0.068, +0.003] | 1.0000 | 1.0000 |
+| Standard (retrained) vs QPP logreg | +0.139 | [+0.112, +0.166] | 0.0005 | 0.0040 |
+| CSP (retrained) vs QPP logreg | +0.139 | [+0.111, +0.168] | 0.0005 | 0.0040 |
+| E5 cosine vs VC | +0.044 | [+0.007, +0.079] | 0.0190 | -- |
+| QPP logreg vs VC | +0.143 | [+0.109, +0.174] | 0.0005 | -- |
