@@ -1,0 +1,491 @@
+{
+  "llama": {
+    "n_test": 1500,
+    "B": 2000,
+    "seed": 0,
+    "auroc": {
+      "Standard (transfer)": 0.8071384475829312,
+      "Standard (retrained)": 0.935640223105734,
+      "CSP (transfer)": 0.7949986591338184,
+      "CSP (retrained)": 0.9242059642447684,
+      "QPP logreg": 0.670956838507517,
+      "E5 cosine": 0.7116237799467613,
+      "VC": 0.7065419871096864
+    },
+    "auroc_check_vs_analysis": {
+      "Standard (transfer)": {
+        "mine": 0.8071384475829312,
+        "ref": 0.8071384475829312,
+        "diff": 0.0
+      },
+      "Standard (retrained)": {
+        "mine": 0.935640223105734,
+        "ref": 0.935640223105734,
+        "diff": 0.0
+      },
+      "CSP (transfer)": {
+        "mine": 0.7949986591338184,
+        "ref": 0.7949986591338184,
+        "diff": 0.0
+      },
+      "CSP (retrained)": {
+        "mine": 0.9242059642447684,
+        "ref": 0.9242059642447684,
+        "diff": 0.0
+      },
+      "QPP logreg": {
+        "mine": 0.670956838507517,
+        "ref": 0.670956838507517,
+        "diff": 0.0
+      },
+      "E5 cosine": {
+        "mine": 0.7116237799467613,
+        "ref": 0.7116237799467613,
+        "diff": 0.0
+      },
+      "VC": {
+        "mine": 0.7065419871096864,
+        "ref": 0.7065419871096864,
+        "diff": 0.0
+      }
+    },
+    "comparisons": [
+      {
+        "comparison": "Standard (transfer) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.09551466763616989,
+        "ci95": [
+          0.0631680722185815,
+          0.12688173138312744
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (transfer) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.0833748791870571,
+        "ci95": [
+          0.05008931829992111,
+          0.11441903401113705
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "Standard (retrained) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.22401644315897273,
+        "ci95": [
+          0.1974472750880537,
+          0.2482545308508682
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (retrained) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.21258218429800713,
+        "ci95": [
+          0.18513341071083245,
+          0.23754986479577314
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "Standard (transfer) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.1361816090754142,
+        "ci95": [
+          0.10387057265771123,
+          0.17066995694722703
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (transfer) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.12404182062630142,
+        "ci95": [
+          0.08948963899536586,
+          0.15782413467457973
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "Standard (retrained) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.26468338459821705,
+        "ci95": [
+          0.23575256815263032,
+          0.29281158266649343
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (retrained) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.25324912573725145,
+        "ci95": [
+          0.22436562055565987,
+          0.28235728040712144
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "E5 cosine vs VC",
+        "family": "baseline_vs_vc",
+        "delta": 0.005081792837074883,
+        "ci95": [
+          -0.025964729927834315,
+          0.0372576385750418
+        ],
+        "p": 0.743,
+        "p_holm": null
+      },
+      {
+        "comparison": "QPP logreg vs VC",
+        "family": "baseline_vs_vc",
+        "delta": -0.035585148602169436,
+        "ci95": [
+          -0.0693697061133623,
+          -0.0006617384559594385
+        ],
+        "p": 0.041,
+        "p_holm": null
+      }
+    ]
+  },
+  "mistral": {
+    "n_test": 1500,
+    "B": 2000,
+    "seed": 0,
+    "auroc": {
+      "Standard (transfer)": 0.7727852760294522,
+      "Standard (retrained)": 0.9159213910451737,
+      "CSP (transfer)": 0.7471990295368522,
+      "CSP (retrained)": 0.9055634247702079,
+      "QPP logreg": 0.6709928349150754,
+      "E5 cosine": 0.7116237799467613,
+      "VC": 0.6168596374081866
+    },
+    "auroc_check_vs_analysis": {
+      "Standard (transfer)": {
+        "mine": 0.7727852760294522,
+        "ref": 0.7727852760294522,
+        "diff": 0.0
+      },
+      "Standard (retrained)": {
+        "mine": 0.9159213910451737,
+        "ref": 0.9159213910451737,
+        "diff": 0.0
+      },
+      "CSP (transfer)": {
+        "mine": 0.7471990295368522,
+        "ref": 0.7471990295368522,
+        "diff": 0.0
+      },
+      "CSP (retrained)": {
+        "mine": 0.9055634247702079,
+        "ref": 0.9055634247702079,
+        "diff": 0.0
+      },
+      "QPP logreg": {
+        "mine": 0.6709928349150754,
+        "ref": 0.6709928349150754,
+        "diff": 0.0
+      },
+      "E5 cosine": {
+        "mine": 0.7116237799467613,
+        "ref": 0.7116237799467613,
+        "diff": 0.0
+      },
+      "VC": {
+        "mine": 0.6168596374081866,
+        "ref": 0.6168596374081866,
+        "diff": 0.0
+      }
+    },
+    "comparisons": [
+      {
+        "comparison": "Standard (transfer) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.06116149608269095,
+        "ci95": [
+          0.02824644229287374,
+          0.0922678251787929
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (transfer) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.03557524959009095,
+        "ci95": [
+          0.0013211114657095072,
+          0.07016251552686101
+        ],
+        "p": 0.043,
+        "p_holm": 0.043
+      },
+      {
+        "comparison": "Standard (retrained) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.20429761109841238,
+        "ci95": [
+          0.17739149203301474,
+          0.23053239770112885
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (retrained) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.1939396448234466,
+        "ci95": [
+          0.16726305084496795,
+          0.22092494986414432
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "Standard (transfer) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.1017924411143768,
+        "ci95": [
+          0.0682701442882129,
+          0.13765970098475558
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (transfer) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.0762061946217768,
+        "ci95": [
+          0.04073389079785657,
+          0.11310123538918003
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "Standard (retrained) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.24492855613009823,
+        "ci95": [
+          0.21571145320778048,
+          0.2748044965352373
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (retrained) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.23457058985513246,
+        "ci95": [
+          0.20430470765465916,
+          0.2643914584624073
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "E5 cosine vs VC",
+        "family": "baseline_vs_vc",
+        "delta": 0.09476414253857468,
+        "ci95": [
+          0.06089110638882155,
+          0.1280874841618171
+        ],
+        "p": 0.0005,
+        "p_holm": null
+      },
+      {
+        "comparison": "QPP logreg vs VC",
+        "family": "baseline_vs_vc",
+        "delta": 0.05413319750688883,
+        "ci95": [
+          0.0191846045473181,
+          0.08788195811996774
+        ],
+        "p": 0.0005,
+        "p_holm": null
+      }
+    ]
+  },
+  "qwen": {
+    "n_test": 1500,
+    "B": 2000,
+    "seed": 0,
+    "auroc": {
+      "Standard (transfer)": 0.8105905030677938,
+      "Standard (retrained)": 0.9355214349607909,
+      "CSP (transfer)": 0.8179031732633083,
+      "CSP (retrained)": 0.9348285041152893,
+      "QPP logreg": 0.670956838507517,
+      "E5 cosine": 0.7116237799467613,
+      "VC": 0.6998934506336267
+    },
+    "auroc_check_vs_analysis": {
+      "Standard (transfer)": {
+        "mine": 0.8105905030677938,
+        "ref": 0.8105905030677938,
+        "diff": 0.0
+      },
+      "Standard (retrained)": {
+        "mine": 0.9355214349607909,
+        "ref": 0.9355214349607909,
+        "diff": 0.0
+      },
+      "CSP (transfer)": {
+        "mine": 0.8179031732633083,
+        "ref": 0.8179031732633083,
+        "diff": 0.0
+      },
+      "CSP (retrained)": {
+        "mine": 0.9348285041152893,
+        "ref": 0.9348285041152893,
+        "diff": 0.0
+      },
+      "QPP logreg": {
+        "mine": 0.670956838507517,
+        "ref": 0.670956838507517,
+        "diff": 0.0
+      },
+      "E5 cosine": {
+        "mine": 0.7116237799467613,
+        "ref": 0.7116237799467613,
+        "diff": 0.0
+      },
+      "VC": {
+        "mine": 0.6998934506336267,
+        "ref": 0.6998934506336267,
+        "diff": 0.0
+      }
+    },
+    "comparisons": [
+      {
+        "comparison": "Standard (transfer) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.0989667231210325,
+        "ci95": [
+          0.06750912272284781,
+          0.12923488478251366
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (transfer) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.10627939331654701,
+        "ci95": [
+          0.07600365484241974,
+          0.13460457399004247
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "Standard (retrained) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.22389765501402958,
+        "ci95": [
+          0.19817215757669812,
+          0.24870551360955392
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (retrained) vs E5 cosine",
+        "family": "probe_vs_baseline",
+        "delta": 0.223204724168528,
+        "ci95": [
+          0.19749392288839507,
+          0.24795854296411246
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "Standard (transfer) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.13963366456027682,
+        "ci95": [
+          0.10518874702695563,
+          0.17287296549045778
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (transfer) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.14694633475579133,
+        "ci95": [
+          0.11479853983770769,
+          0.1811056778245839
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "Standard (retrained) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.2645645964532739,
+        "ci95": [
+          0.23714827055357846,
+          0.29307976845640654
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "CSP (retrained) vs QPP logreg",
+        "family": "probe_vs_baseline",
+        "delta": 0.2638716656077723,
+        "ci95": [
+          0.2360326027639552,
+          0.2912613734774095
+        ],
+        "p": 0.0005,
+        "p_holm": 0.004
+      },
+      {
+        "comparison": "E5 cosine vs VC",
+        "family": "baseline_vs_vc",
+        "delta": 0.011730329313134558,
+        "ci95": [
+          -0.023310700095175267,
+          0.045525655692441006
+        ],
+        "p": 0.514,
+        "p_holm": null
+      },
+      {
+        "comparison": "QPP logreg vs VC",
+        "family": "baseline_vs_vc",
+        "delta": -0.028936612126109762,
+        "ci95": [
+          -0.06430590444795996,
+          0.008327459305168363
+        ],
+        "p": 0.117,
+        "p_holm": null
+      }
+    ]
+  }
+}

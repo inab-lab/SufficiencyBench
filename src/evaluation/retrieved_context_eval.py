@@ -254,6 +254,46 @@ class _Retriever:
         return out
 
 
+class _DenseE5Retriever:
+    """Exact inner-product search over normalised e5-base-v2 embeddings ("passage: " / "query: " prefixes)."""
+    kind = "e5"
+    error = None
+
+    def __init__(self, docs, cache_path, device="cpu", enc_bs=8):
+        self.docs = docs
+        self.title_of = {d[0]: d[1] for d in docs}
+        self.backend = "e5-base-v2 dense, exact inner product (normalised embeddings)"
+        self.device, self.enc_bs = device, enc_bs
+        cache_path = Path(cache_path)
+        if cache_path.exists():
+            self.P = np.load(cache_path)
+            print(f"[build] loaded cached pool embeddings {cache_path.name} {self.P.shape}")
+        else:
+            m = self._model()
+            self.P = m.encode([f"passage: {t} {x}" for _, t, x in docs], batch_size=enc_bs,
+                              normalize_embeddings=True, show_progress_bar=False).astype(np.float32)
+            np.save(cache_path, self.P)
+            print(f"[build] encoded pool {self.P.shape} -> {cache_path.name}")
+
+    def _model(self):
+        if not hasattr(self, "_m"):
+            from sentence_transformers import SentenceTransformer
+            self._m = SentenceTransformer(str(MODELS_DIR / "e5-base-v2"), device=self.device)
+        return self._m
+
+    def search(self, queries, k):
+        Q = self._model().encode([f"query: {q}" for q in queries], batch_size=self.enc_bs,
+                                 normalize_embeddings=True, show_progress_bar=False).astype(np.float32)
+        out = []
+        for i in range(0, len(Q), 256):
+            S = Q[i:i + 256] @ self.P.T
+            top = np.argpartition(-S, k, axis=1)[:, :k]
+            for r in range(S.shape[0]):
+                t = top[r][np.argsort(-S[r, top[r]])]
+                out.append([(self.docs[j][1], float(S[r, j])) for j in t])
+        return out
+
+
 def _make_context(hits_k, ptext):
     return "\n\n".join(f"{t}: {ptext[t]}" for t, _ in hits_k)
 
@@ -304,6 +344,18 @@ def cmd_build(a):
         print(f"[build] train source = hotpot_train: eligible {len(t_elig)}/{len(tq)}; "
               f"sampled train {len(train_idx)}")
 
+    if a.retriever == "e5":
+        # compare retrievers on IDENTICAL questions: reuse the bm25_k5 train/test ids (no resampling)
+        if a.train_source != "validation":
+            raise SystemExit("--retriever e5 requires --train-source validation (ids come from bm25_k5)")
+        vid = {x: i for i, x in enumerate(val["id"])}
+        def _ids(split):
+            with open(RC_DIR / "bm25_k5" / f"{split}.json") as f:
+                return [vid[r["id"]] for r in json.load(f)]
+        test_idx, train_idx = _ids("test"), _ids("train")
+        tr_sel = val.select(train_idx)
+        print(f"[build] e5: reusing bm25_k5 ids: test {len(test_idx)}, train {len(train_idx)}")
+
     # --- paragraph pool: all validation paragraphs (+ paragraphs of sampled HotpotQA-train questions)
     ptext = {}
     for ctx in val["context"]:
@@ -318,11 +370,12 @@ def cmd_build(a):
     docs = [(f"d{i}", t, x) for i, (t, x) in enumerate(ptext.items())]
     print(f"[build] pool: {len(docs)} unique paragraphs (deduped by title)")
 
-    if a.retriever != "bm25":
-        raise SystemExit("only --retriever bm25 is implemented")
     import hashlib
     sig = hashlib.sha1("\n".join(f"{t}\t{x}" for _, t, x in docs).encode()).hexdigest()[:10]
-    retr = _Retriever(docs, out_dir / f"index_{sig}", prefer="rank_bm25" if a.no_pyserini else "pyserini")
+    if a.retriever == "e5":
+        retr = _DenseE5Retriever(docs, out_dir / f"e5_pool_{sig}.npy", device=a.device)
+    else:
+        retr = _Retriever(docs, out_dir / f"index_{sig}", prefer="rank_bm25" if a.no_pyserini else "pyserini")
     print(f"[build] retriever backend: {retr.backend}")
     retr_index_dir = str((out_dir / f"index_{sig}").relative_to(ROOT)) if retr.kind == "pyserini" else None
 
@@ -1068,7 +1121,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     b = sub.add_parser("build")
-    b.add_argument("--retriever", default="bm25", choices=["bm25"])
+    b.add_argument("--retriever", default="bm25", choices=["bm25", "e5"])
+    b.add_argument("--device", default="cpu", help="e5 retriever: encoding device (batch size 8)")
     b.add_argument("--k", type=int, default=5)
     b.add_argument("--n-train", type=int, default=3000)
     b.add_argument("--n-test", type=int, default=1500)

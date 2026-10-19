@@ -6,19 +6,24 @@
 #   - resumable: a stage whose <outfile> already exists (non-empty) is SKIPPED.
 #   - outfile is relative to $ROOT; use "-" to always run (no skip).
 set -u
-ROOT=/home/inab/Documents/MSD_Project/MSD_Project
+ROOT=/home/inab/Documents/MSD_Project/paper1
 cd "$ROOT"
 export PYTHONPATH="$ROOT:$ROOT/src"
 export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-PY=~/miniconda3/envs/csp/bin/python
+PY=${GUARD_PY:-$HOME/miniconda3/envs/csp/bin/python}
 LOGDIR="$ROOT/run_logs"; mkdir -p "$LOGDIR"
 
 STREAM=$1; GPUIDX=$2; shift 2
 DEV="cuda:$GPUIDX"
 MASTER="$LOGDIR/${STREAM}_master.log"
 
-PAUSE_GPU=76; PAUSE_CPU=83; RESUME_GPU=64; RESUME_CPU=68
+# CPU: Ryzen 9 9900X, hardware throttle (Tjmax) 95C. These jobs plateau at 80-84C (max seen 87C), so pausing at
+# 83C spent ~60% of wall time paused; pause at 88C keeps a 7C margin below the hardware limit.
+# GPU: RTX 5090 slowdown temperature is ~90C; 100k-token prefill sits at 76-77C, which paused every 2 min at 76C.
+# 100k-token prefill holds the CPU at 88-89C, so 88C still paused 40% of the time; 92C keeps 3C below Tjmax (95C),
+# where the CPU throttles itself. ABORT (97C, only while paused) is unchanged.
+PAUSE_GPU=83; PAUSE_CPU=92; RESUME_GPU=72; RESUME_CPU=80
 ABORT_GPU=90; ABORT_CPU=97; POLL=6; WORK_SECS=1800; REST_MIN=60; ABORT_STREAK=2
 
 log(){ echo "$(date '+%F %T') [$STREAM] $*" | tee -a "$MASTER"; }
