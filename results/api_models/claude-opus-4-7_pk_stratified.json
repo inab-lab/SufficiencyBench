@@ -1,0 +1,22 @@
+{
+  "model": "Claude Opus 4.7",
+  "pk_rate": 0.3498201438848921,
+  "n_questions": 1112,
+  "n_pk0_questions": 723,
+  "n_pk1_questions": 389,
+  "overall": {
+    "judge_auroc": 0.717008048237669,
+    "vc_auroc": 0.8017312768490245,
+    "n": 2224
+  },
+  "pk0_no_memory": {
+    "judge_auroc": 0.6954492672111171,
+    "vc_auroc": 0.773697269522066,
+    "n": 1446
+  },
+  "pk1_has_memory": {
+    "judge_auroc": 0.75706940874036,
+    "vc_auroc": 0.850873309058227,
+    "n": 778
+  }
+}

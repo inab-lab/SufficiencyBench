@@ -1,0 +1,39 @@
+{
+  "name": "SufficiencyBench",
+  "version": "1.0",
+  "description": "A benchmark for context sufficiency detection in RAG that independently controls context sufficiency and model confidence.",
+  "quadrant_definitions": {
+    "Q1": "Sufficient + Confident",
+    "Q2": "Sufficient + Uncertain",
+    "Q3": "Insufficient + Confident",
+    "Q4": "Insufficient + Uncertain"
+  },
+  "question_types": [
+    "factual",
+    "multi_hop",
+    "comparative",
+    "subjective"
+  ],
+  "model_used_for_pk_test": "/home/inab/Documents/MSD_Project/paper1/data/models/mistral-7b-instruct",
+  "total_questions": 2782,
+  "total_conditions": 5564,
+  "splits": {
+    "train": 1392,
+    "val": 278,
+    "test": 1112
+  },
+  "quadrant_counts": {
+    "Q2": 2293,
+    "Q4": 2293,
+    "Q1": 489,
+    "Q3": 489
+  },
+  "question_type_counts": {
+    "factual": 783,
+    "multi_hop": 1210,
+    "comparative": 289,
+    "subjective": 500
+  },
+  "length_ratio_mean": 0.9903847827567523,
+  "length_ratio_std": 0.044613982535622265
+}

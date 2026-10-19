@@ -1,0 +1,195 @@
+{
+  "model": "mistral",
+  "layer": 13,
+  "window": [
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "alphas": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "n_per_quadrant": 50,
+  "direction": "CSP LogReg probe coef (unit) at layer 12, toward sufficient pole",
+  "alpha_scale": 0.7032141923904419,
+  "alpha_units": "fraction of live L12 residual-stream norm; inject = alpha*0.15*||h||*w_hat",
+  "live_residual_norm_L12": 4.688094615936279,
+  "per_alpha": {
+    "-2": {
+      "Q1": {
+        "n": 50,
+        "correct": 0,
+        "abstain": 17
+      },
+      "Q2": {
+        "n": 50,
+        "correct": 0,
+        "abstain": 21
+      },
+      "Q3": {
+        "n": 50,
+        "correct": 0,
+        "abstain": 29
+      },
+      "Q4": {
+        "n": 50,
+        "correct": 0,
+        "abstain": 32
+      }
+    },
+    "-1": {
+      "Q1": {
+        "n": 50,
+        "correct": 37,
+        "abstain": 11
+      },
+      "Q2": {
+        "n": 50,
+        "correct": 20,
+        "abstain": 14
+      },
+      "Q3": {
+        "n": 50,
+        "correct": 8,
+        "abstain": 30
+      },
+      "Q4": {
+        "n": 50,
+        "correct": 0,
+        "abstain": 35
+      }
+    },
+    "0": {
+      "Q1": {
+        "n": 50,
+        "correct": 45,
+        "abstain": 2
+      },
+      "Q2": {
+        "n": 50,
+        "correct": 28,
+        "abstain": 0
+      },
+      "Q3": {
+        "n": 50,
+        "correct": 15,
+        "abstain": 15
+      },
+      "Q4": {
+        "n": 50,
+        "correct": 5,
+        "abstain": 11
+      }
+    },
+    "1": {
+      "Q1": {
+        "n": 50,
+        "correct": 42,
+        "abstain": 2
+      },
+      "Q2": {
+        "n": 50,
+        "correct": 30,
+        "abstain": 3
+      },
+      "Q3": {
+        "n": 50,
+        "correct": 17,
+        "abstain": 7
+      },
+      "Q4": {
+        "n": 50,
+        "correct": 4,
+        "abstain": 9
+      }
+    },
+    "2": {
+      "Q1": {
+        "n": 50,
+        "correct": 11,
+        "abstain": 0
+      },
+      "Q2": {
+        "n": 50,
+        "correct": 2,
+        "abstain": 0
+      },
+      "Q3": {
+        "n": 50,
+        "correct": 6,
+        "abstain": 0
+      },
+      "Q4": {
+        "n": 50,
+        "correct": 0,
+        "abstain": 0
+      }
+    }
+  },
+  "correctness": {
+    "Q1": [
+      0.0,
+      0.74,
+      0.9,
+      0.84,
+      0.22
+    ],
+    "Q2": [
+      0.0,
+      0.4,
+      0.56,
+      0.6,
+      0.04
+    ],
+    "Q3": [
+      0.0,
+      0.16,
+      0.3,
+      0.34,
+      0.12
+    ],
+    "Q4": [
+      0.0,
+      0.0,
+      0.1,
+      0.08,
+      0.0
+    ]
+  },
+  "abstention": {
+    "Q1": [
+      0.34,
+      0.22,
+      0.04,
+      0.04,
+      0.0
+    ],
+    "Q2": [
+      0.42,
+      0.28,
+      0.0,
+      0.06,
+      0.0
+    ],
+    "Q3": [
+      0.58,
+      0.6,
+      0.3,
+      0.14,
+      0.0
+    ],
+    "Q4": [
+      0.64,
+      0.7,
+      0.22,
+      0.18,
+      0.0
+    ]
+  }
+}

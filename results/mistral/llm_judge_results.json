@@ -1,0 +1,64 @@
+{
+  "method": "llm_judge",
+  "overall": {
+    "n_imputed": 0,
+    "auroc": 0.6594948550046773,
+    "accuracy": 0.6594948550046773,
+    "f1": 0.723404255319149,
+    "n": 2138
+  },
+  "per_quadrant": {
+    "Q1": {
+      "n": 23,
+      "accuracy": 0.8695652173913043,
+      "f1": 0.9302325581395349
+    },
+    "Q2": {
+      "n": 1046,
+      "accuracy": 0.8910133843212237,
+      "f1": 0.942366026289181
+    },
+    "Q3": {
+      "n": 23,
+      "accuracy": 0.34782608695652173,
+      "f1": 0.0
+    },
+    "Q4": {
+      "n": 1046,
+      "accuracy": 0.43021032504780116,
+      "f1": 0.0
+    }
+  },
+  "per_question_type": {
+    "factual": {
+      "n": 566,
+      "accuracy": 0.696113074204947,
+      "auroc": 0.6961130742049471
+    },
+    "multi_hop": {
+      "n": 946,
+      "accuracy": 0.6638477801268499,
+      "auroc": 0.6638477801268499
+    },
+    "comparative": {
+      "n": 204,
+      "accuracy": 0.6911764705882353,
+      "auroc": 0.6911764705882354
+    },
+    "subjective": {
+      "n": 422,
+      "accuracy": 0.5853080568720379,
+      "auroc": 0.5853080568720379
+    }
+  },
+  "parse_stats": {
+    "YES": 1563,
+    "NO": 575,
+    "ambiguous": 0
+  },
+  "config": {
+    "model": "mistral",
+    "n_conditions": 2138,
+    "prompt_template": "joren_style_yes_no"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "n_examples": 300,
+  "agreement": 0.74,
+  "kappa": 0.48,
+  "n_disagreements": 78,
+  "auto_over_sufficient": 50,
+  "auto_under_sufficient": 28,
+  "disagreements_sample": [
+    {
+      "condition_id": "hotpot_1338_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "context describes The Straight Story but contains nothing about Frozen's genre"
+    },
+    {
+      "condition_id": "hotpot_2998_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop",
+      "confidence": "high",
+      "reason": "identifies Don McLean but no mention of his manager or year of death"
+    },
+    {
+      "condition_id": "hotpot_2446_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop",
+      "confidence": "high",
+      "reason": "names Colin Blakely in Equus but doesn't link to The Informers"
+    },
+    {
+      "condition_id": "hotpot_2413_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "multi_hop",
+      "confidence": "high",
+      "reason": "states 2017 MLB draft but does not say when it began"
+    },
+    {
+      "condition_id": "hotpot_1453_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "only Laurus species count given, nothing on Liriodendron"
+    },
+    {
+      "condition_id": "squad_9814_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q4",
+      "question_type": "factual",
+      "confidence": "medium",
+      "reason": "context describes the iterative quotient-based allocation procedure"
+    },
+    {
+      "condition_id": "hotpot_853_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "Onetti's death given but no info on Bryce Courtenay's death date"
+    },
+    {
+      "condition_id": "squad_2414_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q4",
+      "question_type": "factual",
+      "confidence": "high",
+      "reason": "context calls O2 ground state triplet oxygen"
+    },
+    {
+      "condition_id": "squad_474_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q3",
+      "question_type": "factual",
+      "confidence": "medium",
+      "reason": "context says squaring reduced to multiplying two integers"
+    },
+    {
+      "condition_id": "hotpot_989_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "Apple Dumpling Gang year given but no info on Heavyweights"
+    },
+    {
+      "condition_id": "hotpot_2691_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "Can't Stop date given (1980) but no Attack! info to compare"
+    },
+    {
+      "condition_id": "eli5_1983_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q4",
+      "question_type": "subjective",
+      "confidence": "medium",
+      "reason": "context explains insects' brains process info faster"
+    },
+    {
+      "condition_id": "hotpot_1192_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "Miami and Erie dates given but no Carondelet Canal date"
+    },
+    {
+      "condition_id": "hotpot_504_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop",
+      "confidence": "high",
+      "reason": "names Plymouth Barracuda but no manufacture years"
+    },
+    {
+      "condition_id": "hotpot_2795_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "Kinugasa dates given but no Newland info"
+    },
+    {
+      "condition_id": "hotpot_2771_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q3",
+      "question_type": "multi_hop",
+      "confidence": "medium",
+      "reason": "context describes genderqueer as combination/neither in expression implicitly via grouping"
+    },
+    {
+      "condition_id": "hotpot_2093_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "only Echegaray's professions listed, no Graham Swift info"
+    },
+    {
+      "condition_id": "hotpot_2918_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop",
+      "confidence": "high",
+      "reason": "context mentions Tsavo lions on Kenya-Uganda Railway but does not name a Kenyan reserve"
+    },
+    {
+      "condition_id": "eli5_1653_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q4",
+      "question_type": "subjective",
+      "confidence": "medium",
+      "reason": "explains EM drive concept and answers physics question"
+    },
+    {
+      "condition_id": "hotpot_1824_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q3",
+      "question_type": "multi_hop",
+      "confidence": "high",
+      "reason": "context names Pablo Escobar as King of Cocaine and links to Medellin Cartel"
+    },
+    {
+      "condition_id": "hotpot_876_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q4",
+      "question_type": "multi_hop",
+      "confidence": "medium",
+      "reason": "context identifies Szraiber as taught by Nikolayeva, implies Polish though not stated"
+    },
+    {
+      "condition_id": "hotpot_2098_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "Almqvist DOB given but no Steve Winwood info"
+    },
+    {
+      "condition_id": "hotpot_1652_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "multi_hop",
+      "confidence": "high",
+      "reason": "names Cordillera Blanca and Andes but not explicitly that range crosses multiple countries (Andes does, Cordillera Blanca is a sub-range; partial)"
+    },
+    {
+      "condition_id": "eli5_1188_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q4",
+      "question_type": "subjective",
+      "confidence": "medium",
+      "reason": "explains rationale for moving off Earth/expanding species"
+    },
+    {
+      "condition_id": "eli5_1709_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q4",
+      "question_type": "subjective",
+      "confidence": "medium",
+      "reason": "context defines trigger via PTSD and notes online community usage outside Reddit"
+    },
+    {
+      "condition_id": "eli5_1084_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q2",
+      "question_type": "subjective",
+      "confidence": "medium",
+      "reason": "context only notes plastic at events, doesn't really explain why beer isn't sold in plastic"
+    },
+    {
+      "condition_id": "hotpot_2318_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q1",
+      "question_type": "comparative",
+      "confidence": "high",
+      "reason": "Painkiller has fruit juice but Fizz cocktail not described"
+    },
+    {
+      "condition_id": "hotpot_801_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop",
+      "confidence": "high",
+      "reason": "names Michael Nunn as opponent but no Olympic medal info"
+    },
+    {
+      "condition_id": "eli5_1993_insuf",
+      "annotated": true,
+      "auto": false,
+      "quadrant": "Q4",
+      "question_type": "subjective",
+      "confidence": "medium",
+      "reason": "explains lack of state funding, research grants, athletics drives high tuition"
+    },
+    {
+      "condition_id": "hotpot_1991_suf",
+      "annotated": false,
+      "auto": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop",
+      "confidence": "medium",
+      "reason": "context gives 24 tankobon volumes, not chapters; chapter count not explicit"
+    }
+  ],
+  "note": "Annotations by Claude Opus 4.7 (proxy for human judge). High kappa validates benchmark labels."
+}

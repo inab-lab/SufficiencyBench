@@ -1,0 +1,11 @@
+{
+  "model": "qwen3",
+  "best_layers": {
+    "standard": 20,
+    "DECO": 21
+  },
+  "n_layers": 36,
+  "n_boot": 1000,
+  "n_train_short": 2704,
+  "lengths": {}
+}

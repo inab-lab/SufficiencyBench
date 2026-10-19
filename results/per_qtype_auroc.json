@@ -1,0 +1,44 @@
+{
+  "llama": {
+    "standard_probe": {
+      "factual": 0.9173419570727566,
+      "multi_hop": 0.9404636859772313,
+      "comparative": 0.9424259900038447,
+      "subjective": 0.7561824756856315
+    },
+    "verbalized_confidence": {
+      "factual": 0.7596798561600219,
+      "multi_hop": 0.733615221987315,
+      "comparative": 0.7254901960784315,
+      "subjective": 0.6084544372318682
+    }
+  },
+  "mistral": {
+    "standard_probe": {
+      "factual": 0.9167551099401915,
+      "multi_hop": 0.935515735555069,
+      "comparative": 0.9147443291041908,
+      "subjective": 0.8315626333640305
+    },
+    "verbalized_confidence": {
+      "factual": 0.7623081821473611,
+      "multi_hop": 0.7353740462792039,
+      "comparative": 0.554882737408689,
+      "subjective": 0.5870038858066979
+    }
+  },
+  "qwen": {
+    "standard_probe": {
+      "factual": 0.9082520695726005,
+      "multi_hop": 0.9369594464731885,
+      "comparative": 0.9247404844290659,
+      "subjective": 0.7795646998045866
+    },
+    "verbalized_confidence": {
+      "factual": 0.8511156338573337,
+      "multi_hop": 0.813667428004416,
+      "comparative": 0.7201076509034986,
+      "subjective": 0.6221670672267021
+    }
+  }
+}

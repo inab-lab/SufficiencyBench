@@ -1,0 +1,66 @@
+{
+  "inside": {
+    "best_layer": {
+      "layer": 19,
+      "overall_auroc": 0.6349696043179633,
+      "ci_lo": 0.6139542301496114,
+      "ci_hi": 0.6544582703644943,
+      "n": 2138,
+      "n_imputed": 0,
+      "per_question_type_auroc": {
+        "comparative": 0.5550749711649366,
+        "factual": 0.6935783940366343,
+        "multi_hop": 0.6948741557866884,
+        "subjective": 0.4877473551807012
+      }
+    },
+    "middle_layer": {
+      "layer": 14,
+      "overall_auroc": 0.6318613428354661,
+      "ci_lo": 0.6115940909779035,
+      "ci_hi": 0.6513042425319029,
+      "n": 2138,
+      "n_imputed": 0,
+      "per_question_type_auroc": {
+        "comparative": 0.5564206074586698,
+        "factual": 0.6913059221615954,
+        "multi_hop": 0.6909989317433144,
+        "subjective": 0.48624244738438044
+      }
+    }
+  },
+  "lookback_lens": {
+    "n_train": 1600,
+    "n_test": 2138,
+    "overall_auroc": 0.8401205501412805,
+    "ci_lo": 0.8265038358851938,
+    "ci_hi": 0.8556709583193687,
+    "feature_dim": 784,
+    "per_question_type_auroc": {
+      "comparative": 0.7994040753556324,
+      "factual": 0.8678470201900387,
+      "multi_hop": 0.8739099535598872,
+      "subjective": 0.7279935311426068
+    }
+  },
+  "settings": {
+    "model": "qwen",
+    "model_path": "/home/inab/Documents/MSD_Project/paper1/data/models/qwen2.5-7b-instruct",
+    "device": "cuda:0",
+    "k": 10,
+    "temperature": 0.7,
+    "max_new_tokens": 32,
+    "best_layer": 19,
+    "middle_layer": 14,
+    "lookback_max_length": 1024,
+    "train_subset": 800,
+    "batch_size": 4,
+    "limit": null,
+    "methods": [
+      "inside"
+    ],
+    "splits": [
+      "test"
+    ]
+  }
+}

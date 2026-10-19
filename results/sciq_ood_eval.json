@@ -1,0 +1,14 @@
+{
+  "checkpoint": "/home/inab/Documents/MSD_Project/paper1/results/sufficiencyprobe_v2/best_checkpoint.pt",
+  "ckpt_val_auroc": 0.9702133007756392,
+  "sb_val_auroc": 0.9761679292929293,
+  "threshold_best_t": 0.62,
+  "sciq_ood": {
+    "auroc": 0.9580692101046282,
+    "gate_acc_best_t": 0.9016990291262136,
+    "gate_acc_t0.5": 0.9029126213592233,
+    "n_conditions": 1648,
+    "n_sufficient": 824
+  },
+  "sciq_dataset": "/home/inab/Documents/MSD_Project/paper1/data/experiments/sufficiency_bench_sciq/test.json"
+}

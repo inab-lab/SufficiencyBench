@@ -1,0 +1,12 @@
+{
+  "strategies": {
+    "No gate (always context)": 0.5,
+    "Random gate": 0.584,
+    "Sonnet VC gate": 0.742,
+    "Opus VC gate": 0.674,
+    "Mistral probe gate": 0.77,
+    "Oracle gate": 0.846
+  },
+  "probe_vs_sonnet_vc": 0.028000000000000025,
+  "probe_vs_opus_vc": 0.09599999999999997
+}

@@ -1,0 +1,70 @@
+{
+  "tag": "bm25_k5",
+  "train_source": "validation",
+  "n_train_note": null,
+  "index_dir": "data/experiments/retrieved_ctx/bm25_k5/index_c230495b74",
+  "retriever": "bm25",
+  "backend": "pyserini-lucene-bm25(k1=0.9,b=0.4)",
+  "pyserini_error": null,
+  "k": 5,
+  "seed": 0,
+  "pool_size": 66581,
+  "n_bench_questions_excluded": 2685,
+  "n_validation_eligible": 5925,
+  "n_train_eligible": 4425,
+  "splits": {
+    "test": {
+      "n": 1500,
+      "positive_rate": 0.44466666666666665,
+      "positive_rate_by_k": {
+        "1": 0.0,
+        "3": 0.33,
+        "5": 0.44466666666666665,
+        "10": 0.5873333333333334
+      },
+      "positive_rate_by_type_at_k": {
+        "bridge": 0.4036850921273032,
+        "comparison": 0.6045751633986928
+      },
+      "type_distribution": {
+        "bridge": 1194,
+        "comparison": 306
+      },
+      "level_distribution": {
+        "hard": 1500
+      },
+      "yes_no_answers": 87,
+      "answer_in_context_rate_sufficient": 0.9950657894736842,
+      "answer_in_context_rate_insufficient": 0.37267080745341613,
+      "mean_context_chars": 2857.7033333333334,
+      "max_context_chars": 6212
+    },
+    "train": {
+      "n": 3000,
+      "positive_rate": 0.42766666666666664,
+      "positive_rate_by_k": {
+        "1": 0.0,
+        "3": 0.318,
+        "5": 0.42766666666666664,
+        "10": 0.5733333333333334
+      },
+      "positive_rate_by_type_at_k": {
+        "comparison": 0.5833333333333334,
+        "bridge": 0.3877721943048576
+      },
+      "type_distribution": {
+        "comparison": 612,
+        "bridge": 2388
+      },
+      "level_distribution": {
+        "hard": 3000
+      },
+      "yes_no_answers": 204,
+      "answer_in_context_rate_sufficient": 0.9931623931623932,
+      "answer_in_context_rate_insufficient": 0.3813038130381304,
+      "mean_context_chars": 2828.145666666667,
+      "max_context_chars": 13855
+    }
+  },
+  "build_seconds": 10.0
+}

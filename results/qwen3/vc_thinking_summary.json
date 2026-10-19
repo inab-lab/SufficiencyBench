@@ -1,0 +1,110 @@
+{
+  "chat-nothink": {
+    "variant": "chat-nothink",
+    "n": 2138,
+    "auroc": 0.7808636276526764,
+    "ci_lo": 0.7660599088523322,
+    "ci_hi": 0.7960580340071108,
+    "truncation_rate": 0.0,
+    "mean_thinking_tokens": 0.0,
+    "per_question_type": {
+      "factual": {
+        "auroc": 0.8360761153217044,
+        "n": 566
+      },
+      "multi_hop": {
+        "auroc": 0.8164386378162866,
+        "n": 946
+      },
+      "comparative": {
+        "auroc": 0.7508169934640523,
+        "n": 204
+      },
+      "subjective": {
+        "auroc": 0.6413939489229801,
+        "n": 422
+      }
+    }
+  },
+  "chat-think": {
+    "variant": "chat-think",
+    "n": 2138,
+    "auroc": 0.7707228370586676,
+    "ci_lo": 0.7525312816940725,
+    "ci_hi": 0.7870164561968777,
+    "truncation_rate": 0.08933582787652011,
+    "mean_thinking_tokens": 299.12160898035546,
+    "per_question_type": {
+      "factual": {
+        "auroc": 0.8304136647979123,
+        "n": 566
+      },
+      "multi_hop": {
+        "auroc": 0.8278519995172732,
+        "n": 946
+      },
+      "comparative": {
+        "auroc": 0.7250576701268743,
+        "n": 204
+      },
+      "subjective": {
+        "auroc": 0.5862626625637339,
+        "n": 422
+      }
+    }
+  },
+  "cot-nothink": {
+    "variant": "cot-nothink",
+    "n": 2138,
+    "auroc": 0.8019857170484468,
+    "ci_lo": 0.7861113128641947,
+    "ci_hi": 0.8169486992468242,
+    "truncation_rate": 0.0,
+    "mean_thinking_tokens": 0.0,
+    "per_question_type": {
+      "factual": {
+        "auroc": 0.8437051280450498,
+        "n": 566
+      },
+      "multi_hop": {
+        "auroc": 0.835218053984955,
+        "n": 946
+      },
+      "comparative": {
+        "auroc": 0.7760957324106112,
+        "n": 204
+      },
+      "subjective": {
+        "auroc": 0.6312975899013948,
+        "n": 422
+      }
+    }
+  },
+  "raw": {
+    "variant": "raw",
+    "n": 2138,
+    "auroc": 0.7287193035114079,
+    "ci_lo": 0.71363544083146,
+    "ci_hi": 0.7432939827312973,
+    "truncation_rate": 0.0,
+    "mean_thinking_tokens": 0.0,
+    "per_question_type": {
+      "factual": {
+        "auroc": 0.7720223751076927,
+        "n": 566
+      },
+      "multi_hop": {
+        "auroc": 0.7479182403711633,
+        "n": 946
+      },
+      "comparative": {
+        "auroc": 0.7450980392156861,
+        "n": 204
+      },
+      "subjective": {
+        "auroc": 0.6197187843938815,
+        "n": 422
+      }
+    }
+  }
+}

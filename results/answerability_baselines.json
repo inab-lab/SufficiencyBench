@@ -1,0 +1,83 @@
+{
+  "squad2_answerability": {
+    "auroc": 0.7936873939520163,
+    "ci_lo": 0.777547164280195,
+    "ci_hi": 0.808769615868935,
+    "ci_half": 0.01561122579437002,
+    "n": 2138,
+    "n_questions": 1069,
+    "oracle": false,
+    "per_question_type": {
+      "factual": {
+        "auroc": 0.9166302488481565,
+        "n": 566
+      },
+      "multi_hop": {
+        "auroc": 0.8076333421237301,
+        "n": 946
+      },
+      "subjective": {
+        "auroc": 0.5580063340895307,
+        "n": 422
+      },
+      "comparative": {
+        "auroc": 0.7574009996155324,
+        "n": 204
+      }
+    }
+  },
+  "minicheck_entailment_oracle": {
+    "auroc": 0.8840886239554904,
+    "ci_lo": 0.8714019379380291,
+    "ci_hi": 0.8965577447952809,
+    "ci_half": 0.012577903428625914,
+    "n": 2138,
+    "n_questions": 1069,
+    "oracle": true,
+    "per_question_type": {
+      "factual": {
+        "auroc": 0.9402414813519959,
+        "n": 566
+      },
+      "multi_hop": {
+        "auroc": 0.9343357365384013,
+        "n": 946
+      },
+      "subjective": {
+        "auroc": 0.6308708250039308,
+        "n": 422
+      },
+      "comparative": {
+        "auroc": 0.7937331795463283,
+        "n": 204
+      }
+    }
+  },
+  "length_only_logreg": {
+    "auroc": 0.4991262389948555,
+    "ci_lo": 0.48605400648079516,
+    "ci_hi": 0.5146544531183685,
+    "ci_half": 0.014300223318786692,
+    "n": 2138,
+    "n_questions": 1069,
+    "oracle": false,
+    "per_question_type": {
+      "factual": {
+        "auroc": 0.4974840489954925,
+        "n": 566
+      },
+      "multi_hop": {
+        "auroc": 0.5122112019452105,
+        "n": 946
+      },
+      "subjective": {
+        "auroc": 0.4687338559331551,
+        "n": 422
+      },
+      "comparative": {
+        "auroc": 0.4826989619377162,
+        "n": 204
+      }
+    }
+  }
+}

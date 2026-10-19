@@ -1,0 +1,95 @@
+[
+  {
+    "model": "llama",
+    "best_layer": 12,
+    "hidden_dim": 4096,
+    "observed_cosine_suf_conf": 0.0006362860036512701,
+    "random_baseline": 0.015625,
+    "bootstrap": {
+      "mean": -0.0065945197253028595,
+      "ci_90": [
+        -0.031004579264363126,
+        0.020028743210256605
+      ],
+      "ci_95": [
+        -0.035415187858074904,
+        0.02442198096531864
+      ],
+      "n_boot": 100
+    },
+    "tost": {
+      "equivalence_bound": 0.05,
+      "ci_90_lo": -0.031004579264363126,
+      "ci_90_hi": 0.020028743210256605,
+      "passes_tost": true,
+      "interpretation": "TOST PASSES: 90% CI [-0.0310, 0.0200] \u2282 [-0.05, 0.05]. Positive evidence of practical orthogonality."
+    },
+    "positive_controls": {
+      "factual_vs_multihop": -0.6281615506767083,
+      "comparative_vs_multihop": -0.3462148034155539,
+      "sufficiency_vs_factual": -0.0889824902577807
+    }
+  },
+  {
+    "model": "mistral",
+    "best_layer": 12,
+    "hidden_dim": 4096,
+    "observed_cosine_suf_conf": -0.012306848707239205,
+    "random_baseline": 0.015625,
+    "bootstrap": {
+      "mean": -0.009369907513624258,
+      "ci_90": [
+        -0.03221774220601512,
+        0.014959872104359201
+      ],
+      "ci_95": [
+        -0.03247037161399487,
+        0.017634542948369088
+      ],
+      "n_boot": 100
+    },
+    "tost": {
+      "equivalence_bound": 0.05,
+      "ci_90_lo": -0.03221774220601512,
+      "ci_90_hi": 0.014959872104359201,
+      "passes_tost": true,
+      "interpretation": "TOST PASSES: 90% CI [-0.0322, 0.0150] \u2282 [-0.05, 0.05]. Positive evidence of practical orthogonality."
+    },
+    "positive_controls": {
+      "factual_vs_multihop": -0.6031313224896361,
+      "comparative_vs_multihop": -0.31019939537513963,
+      "sufficiency_vs_factual": -0.06814129290585338
+    }
+  },
+  {
+    "model": "qwen",
+    "best_layer": 16,
+    "hidden_dim": 3584,
+    "observed_cosine_suf_conf": -0.026003724120390155,
+    "random_baseline": 0.016703827619526525,
+    "bootstrap": {
+      "mean": -0.024199950481916366,
+      "ci_90": [
+        -0.053114711599129234,
+        0.002814972165608342
+      ],
+      "ci_95": [
+        -0.05483384644603644,
+        0.006668647006739044
+      ],
+      "n_boot": 100
+    },
+    "tost": {
+      "equivalence_bound": 0.05,
+      "ci_90_lo": -0.053114711599129234,
+      "ci_90_hi": 0.002814972165608342,
+      "passes_tost": false,
+      "interpretation": "TOST FAILS: 90% CI [-0.0531, 0.0028] exceeds equivalence bound \u00b10.05."
+    },
+    "positive_controls": {
+      "factual_vs_multihop": -0.5052483079897467,
+      "comparative_vs_multihop": -0.4686286706732484,
+      "sufficiency_vs_factual": -0.010808979796636253
+    }
+  }
+]

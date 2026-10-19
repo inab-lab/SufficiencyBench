@@ -1,0 +1,10 @@
+{
+  "lexical_baselines": {
+    "minilm_cosine": 0.6341562233922928,
+    "jaccard_overlap": 0.6262529960332913,
+    "exact_presence": 0.9307764265668851
+  },
+  "gold_leak_rate_in_insufficient": 0.08980355472404115,
+  "n_conditions": 2138,
+  "benchmark_version": "1.1"
+}

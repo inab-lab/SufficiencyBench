@@ -1,0 +1,52 @@
+{
+  "default_t": {
+    "probe": {
+      "fp_per_1k": 84,
+      "fn_per_1k": 50,
+      "f1": 0.870406189052299,
+      "precision": 0.8426966292103271,
+      "recall": 0.8999999999964,
+      "threshold": 0.5
+    },
+    "sonnet_vc": {
+      "fp_per_1k": 108,
+      "fn_per_1k": 120,
+      "f1": 0.7692307687277287,
+      "precision": 0.7786885245869726,
+      "recall": 0.75999999999696,
+      "threshold": 0.5
+    },
+    "sonnet_judge": {
+      "fp_per_1k": 108,
+      "fn_per_1k": 120,
+      "f1": 0.7692307687277287,
+      "precision": 0.7786885245869726,
+      "recall": 0.75999999999696,
+      "threshold": 0.5
+    }
+  },
+  "best_t": {
+    "probe": {
+      "fp_per_1k": 94,
+      "fn_per_1k": 36,
+      "f1": 0.8771266535624586,
+      "precision": 0.8315412186350124,
+      "recall": 0.927999999996288,
+      "threshold": 0.4527571860708232
+    },
+    "sonnet_vc": {
+      "fp_per_1k": 70,
+      "fn_per_1k": 138,
+      "f1": 0.7768240338340917,
+      "precision": 0.8379629629590836,
+      "recall": 0.7239999999971041,
+      "threshold": 0.78
+    }
+  },
+  "probe_latency_ms": 0.0013339403085410595,
+  "auroc": {
+    "probe": 0.933376,
+    "sonnet_vc": 0.845056,
+    "sonnet_judge": 0.772
+  }
+}

@@ -1,0 +1,20 @@
+# Large regenerable artifacts (see REPLICATION.md to reproduce)
+data/
+*.pt
+*.pkl
+*.npy
+*.h5
+*.index
+*.faiss
+*.bak.jsonl
+# caches / logs / temp
+__pycache__/
+*.pyc
+run_logs/
+*.log
+*.temps
+*.out
+.env
+.env.*
+scratchpad/
+.DS_Store

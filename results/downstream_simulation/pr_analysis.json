@@ -1,0 +1,23 @@
+{
+  "probe": {
+    "auroc": 0.933376,
+    "f1_max": 0.8771266535657748,
+    "best_thresh": 0.4527571860708232,
+    "prec_at_90rec": 0.5,
+    "rec_at_90prec": 0.0
+  },
+  "sonnet_vc": {
+    "auroc": 0.845056,
+    "f1_max": 0.7768240338374255,
+    "best_thresh": 0.78,
+    "prec_at_90rec": 0.5,
+    "rec_at_90prec": 0.0
+  },
+  "sonnet_judge": {
+    "auroc": 0.772,
+    "f1_max": 0.769230768730843,
+    "best_thresh": 1.0,
+    "prec_at_90rec": 0.5,
+    "rec_at_90prec": 0.0
+  }
+}

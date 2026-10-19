@@ -1,0 +1,50 @@
+{
+  "llama": {
+    "baseline_composite": 0.219,
+    "best_config": "hybrid_t0.3_a1.0",
+    "best_composite": 0.378,
+    "improvement_pct": 72.7,
+    "baseline": {
+      "cr": 0.243,
+      "ar": 0.834,
+      "orf": 0.639
+    },
+    "best": {
+      "cr": 0.323,
+      "ar": 0.823,
+      "orf": 0.39
+    }
+  },
+  "mistral": {
+    "baseline_composite": 0.355,
+    "best_config": "probe_abstain_t0.3",
+    "best_composite": 0.494,
+    "improvement_pct": 39.0,
+    "baseline": {
+      "cr": 0.464,
+      "ar": 0.404,
+      "orf": 0.158
+    },
+    "best": {
+      "cr": 0.402,
+      "ar": 0.88,
+      "orf": 0.294
+    }
+  },
+  "qwen": {
+    "baseline_composite": 0.268,
+    "best_config": "hybrid_t0.3_a1.0",
+    "best_composite": 0.317,
+    "improvement_pct": 18.1,
+    "baseline": {
+      "cr": 0.27,
+      "ar": 0.874,
+      "orf": 0.607
+    },
+    "best": {
+      "cr": 0.29,
+      "ar": 0.923,
+      "orf": 0.579
+    }
+  }
+}

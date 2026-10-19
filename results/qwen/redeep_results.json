@@ -1,0 +1,14 @@
+{
+  "redeep_ecs": {
+    "n_imputed": 0,
+    "overall_auroc": 0.4896710685786442
+  },
+  "redeep_pks": {
+    "n_imputed": 0,
+    "overall_auroc": 0.4086777550161408
+  },
+  "redeep_combined": {
+    "n_imputed": 0,
+    "overall_auroc": 0.44514207257685556
+  }
+}

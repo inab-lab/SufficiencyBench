@@ -1,0 +1,230 @@
+{
+  "table1_main": {
+    "llama": {
+      "Standard Probe": {
+        "auroc": 0.9065360123420383,
+        "ci_lo": 0.8932248947951433,
+        "ci_hi": 0.9177601279289995,
+        "ci_half": 0.012267616566928097,
+        "ci_method": "bootstrap"
+      },
+      "CSP Probe": {
+        "auroc": 0.9043238262418827,
+        "ci_lo": 0.8910052334711466,
+        "ci_hi": 0.9154150060169914,
+        "ci_half": 0.012204886272922433,
+        "ci_method": "bootstrap"
+      },
+      "Standard (Neural)": {
+        "auroc": 0.8944709348673957,
+        "ci_lo": 0.879976587791834,
+        "ci_hi": 0.9064896031431237,
+        "ci_half": 0.013256507675644846,
+        "ci_method": "bootstrap"
+      },
+      "CSP (Neural)": {
+        "auroc": 0.9100301812890008,
+        "ci_lo": 0.8970780598249869,
+        "ci_hi": 0.9211967482300474,
+        "ci_half": 0.012059344202530242,
+        "ci_method": "bootstrap"
+      },
+      "Verbalized Confidence": {
+        "auroc": 0.7192623829479655,
+        "ci_lo": 0.6977480667445323,
+        "ci_hi": 0.7407766991513988,
+        "ci_half": 0.021514316203433248,
+        "ci_method": "hanley_mcneil"
+      },
+      "Token Entropy": {
+        "auroc": 0.5334133734000372,
+        "ci_lo": 0.509001684031146,
+        "ci_hi": 0.5578250627689285,
+        "ci_half": 0.024411689368891265,
+        "ci_method": "hanley_mcneil"
+      },
+      "Generation Match": {
+        "auroc": 0.6646398503274088,
+        "ci_lo": 0.641809625751998,
+        "ci_hi": 0.6874700749028196,
+        "ci_half": 0.02283022457541084,
+        "ci_method": "hanley_mcneil"
+      },
+      "Semantic Entropy": {
+        "auroc": 0.630111633141138,
+        "ci_lo": 0.6066560465486543,
+        "ci_hi": 0.6535672197336218,
+        "ci_half": 0.0234555865924837,
+        "ci_method": "hanley_mcneil"
+      },
+      "LLM Judge": {
+        "auroc": 0.5140803720112954,
+        "ci_lo": 0.4896137133856157,
+        "ci_hi": 0.5385470306369751,
+        "ci_half": 0.024466658625679677,
+        "ci_method": "hanley_mcneil"
+      }
+    },
+    "mistral": {
+      "Standard Probe": {
+        "auroc": 0.9097737847196395,
+        "ci_lo": 0.897262633484814,
+        "ci_hi": 0.9207673632070391,
+        "ci_half": 0.01175236486111253,
+        "ci_method": "bootstrap"
+      },
+      "CSP Probe": {
+        "auroc": 0.9016767285547896,
+        "ci_lo": 0.888119933721272,
+        "ci_hi": 0.9135570757426569,
+        "ci_half": 0.012718571010692459,
+        "ci_method": "bootstrap"
+      },
+      "Standard (Neural)": {
+        "auroc": 0.9198397565195173,
+        "ci_lo": 0.9081914299962225,
+        "ci_hi": 0.9301899694174893,
+        "ci_half": 0.01099926971063342,
+        "ci_method": "bootstrap"
+      },
+      "CSP (Neural)": {
+        "auroc": 0.9141968443095276,
+        "ci_lo": 0.9013550405850395,
+        "ci_hi": 0.9244972745912782,
+        "ci_half": 0.011571117003119358,
+        "ci_method": "bootstrap"
+      },
+      "Verbalized Confidence": {
+        "auroc": 0.7005274943754642,
+        "ci_lo": 0.6785150879758363,
+        "ci_hi": 0.7225399007750922,
+        "ci_half": 0.02201240639962798,
+        "ci_method": "hanley_mcneil"
+      },
+      "Token Entropy": {
+        "auroc": 0.6329179942262643,
+        "ci_lo": 0.6095074925855976,
+        "ci_hi": 0.656328495866931,
+        "ci_half": 0.023410501640666714,
+        "ci_method": "hanley_mcneil"
+      },
+      "Generation Match": {
+        "auroc": 0.7591206735266604,
+        "ci_lo": 0.7388390348971439,
+        "ci_hi": 0.7794023121561768,
+        "ci_half": 0.020281638629516485,
+        "ci_method": "hanley_mcneil"
+      },
+      "Semantic Entropy": {
+        "auroc": 0.6373060508715296,
+        "ci_lo": 0.6139680604167497,
+        "ci_hi": 0.6606440413263095,
+        "ci_half": 0.02333799045477991,
+        "ci_method": "hanley_mcneil"
+      },
+      "LLM Judge": {
+        "auroc": 0.6594948550046773,
+        "ci_lo": 0.6365615921913061,
+        "ci_hi": 0.6824281178180485,
+        "ci_half": 0.022933262813371158,
+        "ci_method": "hanley_mcneil"
+      }
+    },
+    "qwen": {
+      "Standard Probe": {
+        "auroc": 0.9035345098406402,
+        "ci_lo": 0.8898848003778206,
+        "ci_hi": 0.9145652061384464,
+        "ci_half": 0.0123402028803129,
+        "ci_method": "bootstrap"
+      },
+      "CSP Probe": {
+        "auroc": 0.9137186165786197,
+        "ci_lo": 0.9016527995712904,
+        "ci_hi": 0.924709000021521,
+        "ci_half": 0.0115281002251153,
+        "ci_method": "bootstrap"
+      },
+      "Standard (Neural)": {
+        "auroc": 0.906722840558962,
+        "ci_lo": 0.8945915625750959,
+        "ci_hi": 0.9173010862466217,
+        "ci_half": 0.011354761835762894,
+        "ci_method": "bootstrap"
+      },
+      "CSP (Neural)": {
+        "auroc": 0.8910200820644036,
+        "ci_lo": 0.8773903279958085,
+        "ci_hi": 0.9035314584312046,
+        "ci_half": 0.01307056521769806,
+        "ci_method": "bootstrap"
+      },
+      "Verbalized Confidence": {
+        "auroc": 0.7824413853815452,
+        "ci_lo": 0.76299797959796,
+        "ci_hi": 0.8018847911651303,
+        "ci_half": 0.019443405783585166,
+        "ci_method": "hanley_mcneil"
+      },
+      "Token Entropy": {
+        "auroc": 0.388874839095839,
+        "ci_lo": 0.36514042514539025,
+        "ci_hi": 0.4126092530462877,
+        "ci_half": 0.02373441395044873,
+        "ci_method": "hanley_mcneil"
+      },
+      "Generation Match": {
+        "auroc": 0.6828811973807297,
+        "ci_lo": 0.6604447428892518,
+        "ci_hi": 0.7053176518722076,
+        "ci_half": 0.02243645449147791,
+        "ci_method": "hanley_mcneil"
+      },
+      "Semantic Entropy": {
+        "auroc": 0.4592189442936887,
+        "ci_lo": 0.43484000819031265,
+        "ci_hi": 0.48359788039706475,
+        "ci_half": 0.024378936103376048,
+        "ci_method": "hanley_mcneil"
+      },
+      "LLM Judge": {
+        "auroc": 0.724508886810103,
+        "ci_lo": 0.7031431335511247,
+        "ci_hi": 0.7458746400690812,
+        "ci_half": 0.02136575325897827,
+        "ci_method": "hanley_mcneil"
+      }
+    }
+  },
+  "table2_real_retrieval": {},
+  "table5_frontier": {},
+  "orthogonality": {},
+  "confidence_projection": {
+    "llama": {
+      "delta_suf_auroc": 0.00016497593292263968,
+      "delta_conf_auroc": -0.0002216673461070684,
+      "random_delta_mean": 0.0001568888773872845,
+      "random_delta_std": 0.0001853753530083232,
+      "orthogonality_validated": true
+    },
+    "mistral": {
+      "delta_suf_auroc": 2.4261166606365236e-05,
+      "delta_conf_auroc": -0.0019911842641662236,
+      "random_delta_mean": -2.4908131049083958e-05,
+      "random_delta_std": 0.00017283337538407347,
+      "orthogonality_validated": true
+    },
+    "qwen": {
+      "delta_suf_auroc": 2.9113399927505057e-05,
+      "delta_conf_auroc": -0.0007949449653485985,
+      "random_delta_mean": -2.6444671601022485e-05,
+      "random_delta_std": 4.29102702686476e-05,
+      "orthogonality_validated": true
+    }
+  },
+  "config": {
+    "n_bootstrap": 1000,
+    "seed": 42,
+    "note": "Bootstrap CIs for probe methods; Hanley-McNeil CIs for methods with only aggregate AUROC values."
+  }
+}

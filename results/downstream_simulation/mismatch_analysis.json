@@ -1,0 +1,70 @@
+{
+  "frontier_mistral_labels": {
+    "Claude Opus 4": {
+      "Q1": 0.52,
+      "Q3": 0.92,
+      "file": "anthropic_results.json"
+    },
+    "Claude Sonnet 4": {
+      "Q1": 0.5,
+      "Q3": 0.9,
+      "file": "anthropic_sonnet_results.json"
+    },
+    "GPT-4o": {
+      "Q1": 0.64,
+      "Q3": 0.82,
+      "file": "openai_results.json"
+    },
+    "GPT-4o-mini": {
+      "Q1": 0.62,
+      "Q3": 0.88,
+      "file": "openai_mini_results.json"
+    },
+    "Gemini 2.5 Flash": {
+      "Q1": 0.46,
+      "Q3": 0.84,
+      "file": "gemini_flash_results.json"
+    }
+  },
+  "frontier_own_pk_labels": {
+    "Claude Sonnet 4": {
+      "Q1": 0.76,
+      "Q3": 0.8,
+      "n_Q1": 176,
+      "n_Q3": 173
+    },
+    "Claude Opus 4.7": {
+      "Q1": 0.73,
+      "Q3": 0.84,
+      "n_Q1": 154,
+      "n_Q3": 139
+    }
+  },
+  "composition_shift": {
+    "Mistral labels": {
+      "Q1": 50,
+      "Q2": 200,
+      "Q3": 49,
+      "Q4": 201
+    },
+    "Haiku own-PK": {
+      "Q1": 108,
+      "Q2": 142,
+      "Q3": 97,
+      "Q4": 153
+    },
+    "Opus own-PK": {
+      "Q1": 154,
+      "Q2": 96,
+      "Q3": 139,
+      "Q4": 111
+    },
+    "Sonnet own-PK": {
+      "Q1": 176,
+      "Q2": 74,
+      "Q3": 173,
+      "Q4": 77
+    }
+  },
+  "key_finding": "Mistral cross-model labels underestimate Q1 by 0.21-0.26 accuracy points and undercount Q1 cases by 3.5x for frontier models"
+}

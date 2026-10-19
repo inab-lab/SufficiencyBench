@@ -1,0 +1,14 @@
+{
+  "verbalized_confidence": {
+    "overall_auroc": 0.7824413853815452,
+    "n_imputed": 0
+  },
+  "token_entropy": {
+    "overall_auroc": 0.388874839095839,
+    "n_imputed": 0
+  },
+  "generation_match": {
+    "overall_auroc": 0.6828811973807297,
+    "n_imputed": 0
+  }
+}

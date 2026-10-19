@@ -1,0 +1,130 @@
+{
+  "description": "Open-weight PK-stratified sufficiency AUROC on the SufficiencyBench test split. probe = CSP delta-h LogReg; vc = verbalized confidence. PK from per-model pk_cache (knows->PK=1). Each question contributes its suf+insuf conditions.",
+  "models": {
+    "llama": {
+      "n_conditions": 2138,
+      "n_no_pk_label": 0,
+      "pk0": {
+        "n": 2092,
+        "n_sufficient": 1046,
+        "probe_auroc": 0.9044,
+        "vc_auroc": 0.7161,
+        "probe_minus_vc_auroc": 0.1883
+      },
+      "pk1": {
+        "n": 46,
+        "n_sufficient": 23,
+        "probe_auroc": 0.8998,
+        "vc_auroc": 0.7609,
+        "probe_minus_vc_auroc": 0.1389
+      },
+      "all": {
+        "n": 2138,
+        "n_sufficient": 1069,
+        "probe_auroc": 0.9043,
+        "vc_auroc": 0.7171,
+        "probe_minus_vc_auroc": 0.1872
+      }
+    },
+    "mistral": {
+      "n_conditions": 2138,
+      "n_no_pk_label": 0,
+      "pk0": {
+        "n": 1766,
+        "n_sufficient": 883,
+        "probe_auroc": 0.8974,
+        "vc_auroc": 0.6947,
+        "probe_minus_vc_auroc": 0.2027
+      },
+      "pk1": {
+        "n": 372,
+        "n_sufficient": 186,
+        "probe_auroc": 0.9231,
+        "vc_auroc": 0.7207,
+        "probe_minus_vc_auroc": 0.2024
+      },
+      "all": {
+        "n": 2138,
+        "n_sufficient": 1069,
+        "probe_auroc": 0.9017,
+        "vc_auroc": 0.6995,
+        "probe_minus_vc_auroc": 0.2022
+      }
+    },
+    "qwen": {
+      "n_conditions": 2138,
+      "n_no_pk_label": 0,
+      "pk0": {
+        "n": 2054,
+        "n_sufficient": 1027,
+        "probe_auroc": 0.9126,
+        "vc_auroc": 0.7815,
+        "probe_minus_vc_auroc": 0.1311
+      },
+      "pk1": {
+        "n": 84,
+        "n_sufficient": 42,
+        "probe_auroc": 0.9393,
+        "vc_auroc": 0.7749,
+        "probe_minus_vc_auroc": 0.1644
+      },
+      "all": {
+        "n": 2138,
+        "n_sufficient": 1069,
+        "probe_auroc": 0.9137,
+        "vc_auroc": 0.7801,
+        "probe_minus_vc_auroc": 0.1336
+      }
+    },
+    "qwen14": {
+      "n_conditions": 2138,
+      "n_no_pk_label": 0,
+      "pk0": {
+        "n": 2062,
+        "n_sufficient": 1031,
+        "probe_auroc": 0.9495,
+        "vc_auroc": 0.8182,
+        "probe_minus_vc_auroc": 0.1313
+      },
+      "pk1": {
+        "n": 76,
+        "n_sufficient": 38,
+        "probe_auroc": 0.9363,
+        "vc_auroc": 0.8456,
+        "probe_minus_vc_auroc": 0.0907
+      },
+      "all": {
+        "n": 2138,
+        "n_sufficient": 1069,
+        "probe_auroc": 0.949,
+        "vc_auroc": 0.8182,
+        "probe_minus_vc_auroc": 0.1308
+      }
+    },
+    "deepseek32": {
+      "n_conditions": 2138,
+      "n_no_pk_label": 0,
+      "pk0": {
+        "n": 1748,
+        "n_sufficient": 874,
+        "probe_auroc": 0.9471,
+        "vc_auroc": 0.8034,
+        "probe_minus_vc_auroc": 0.1437
+      },
+      "pk1": {
+        "n": 390,
+        "n_sufficient": 195,
+        "probe_auroc": 0.9409,
+        "vc_auroc": 0.8007,
+        "probe_minus_vc_auroc": 0.1402
+      },
+      "all": {
+        "n": 2138,
+        "n_sufficient": 1069,
+        "probe_auroc": 0.9462,
+        "vc_auroc": 0.8029,
+        "probe_minus_vc_auroc": 0.1433
+      }
+    }
+  }
+}

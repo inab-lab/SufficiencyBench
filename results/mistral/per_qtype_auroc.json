@@ -1,0 +1,14 @@
+{
+  "standard_probe": {
+    "factual": 0.9167551099401915,
+    "multi_hop": 0.935515735555069,
+    "comparative": 0.9147443291041908,
+    "subjective": 0.8315626333640305
+  },
+  "verbalized_confidence": {
+    "factual": 0.7623081821473611,
+    "multi_hop": 0.7353740462792039,
+    "comparative": 0.554882737408689,
+    "subjective": 0.5870038858066979
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "n_examples": 100,
+  "n_runs": 3,
+  "judge_flip_rate": 0.1,
+  "judge_flip_count": 10,
+  "vc_mean_variance": 0.0021444444444444436,
+  "vc_mean_std": 0.03209852348593564,
+  "probe_variance": 0.0,
+  "note": "Opus behavioral eval run 3x on same 100 examples"
+}

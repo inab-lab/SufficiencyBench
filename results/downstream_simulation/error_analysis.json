@@ -1,0 +1,759 @@
+{
+  "probe_right_vc_wrong": [
+    {
+      "condition_id": "hotpot_989_suf",
+      "probe_score": 0.8282831595886958,
+      "vc_score": 0.08,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "hotpot_902_suf",
+      "probe_score": 0.814312995388554,
+      "vc_score": 0.05,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "squad_11350_insuf",
+      "probe_score": 0.3080185753624742,
+      "vc_score": 0.8,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "hotpot_2300_suf",
+      "probe_score": 0.8353919685199003,
+      "vc_score": 0.15,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "squad_5803_insuf",
+      "probe_score": 0.4450160709764082,
+      "vc_score": 0.75,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "hotpot_2508_insuf",
+      "probe_score": 0.2770506407602257,
+      "vc_score": 0.95,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q3",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "hotpot_2922_suf",
+      "probe_score": 0.796145868504099,
+      "vc_score": 0.05,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2821_suf",
+      "probe_score": 0.9469280765624339,
+      "vc_score": 0.15,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "squad_10439_insuf",
+      "probe_score": 0.49203248356837775,
+      "vc_score": 0.8,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "squad_9815_insuf",
+      "probe_score": 0.10878681555945681,
+      "vc_score": 0.8,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "hotpot_632_suf",
+      "probe_score": 0.7355618442185999,
+      "vc_score": 0.15,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "eli5_235_suf",
+      "probe_score": 0.8859181579902808,
+      "vc_score": 0.05,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "eli5_679_insuf",
+      "probe_score": 0.22062673360884708,
+      "vc_score": 0.55,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_2367_suf",
+      "probe_score": 0.6873305402349293,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2714_insuf",
+      "probe_score": 0.09456296234959703,
+      "vc_score": 0.65,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q3",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "hotpot_1789_suf",
+      "probe_score": 0.942112382787113,
+      "vc_score": 0.2,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2961_insuf",
+      "probe_score": 0.3098744031078433,
+      "vc_score": 0.9,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q3",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "hotpot_886_suf",
+      "probe_score": 0.9367335581774586,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "eli5_1110_insuf",
+      "probe_score": 0.24683120763640154,
+      "vc_score": 0.88,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_213_suf",
+      "probe_score": 0.7747539246701777,
+      "vc_score": 0.05,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_636_suf",
+      "probe_score": 0.5082641776460045,
+      "vc_score": 0.15,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2827_suf",
+      "probe_score": 0.5373145102430402,
+      "vc_score": 0.05,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "eli5_1238_insuf",
+      "probe_score": 0.2347827071006239,
+      "vc_score": 0.55,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_88_suf",
+      "probe_score": 0.7866332712019157,
+      "vc_score": 0.05,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2376_suf",
+      "probe_score": 0.7757350542946303,
+      "vc_score": 0.3,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_948_suf",
+      "probe_score": 0.7094180627289605,
+      "vc_score": 0.2,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2195_insuf",
+      "probe_score": 0.23536185204508994,
+      "vc_score": 0.75,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q3",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_1186_suf",
+      "probe_score": 0.9438027242173472,
+      "vc_score": 0.15,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2795_suf",
+      "probe_score": 0.7394338333854882,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "hotpot_504_suf",
+      "probe_score": 0.6036507381941884,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2620_insuf",
+      "probe_score": 0.18067530526239217,
+      "vc_score": 0.65,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2228_suf",
+      "probe_score": 0.898323237779763,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "squad_5677_insuf",
+      "probe_score": 0.37124503342222503,
+      "vc_score": 0.9,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "eli5_332_insuf",
+      "probe_score": 0.2142615664615596,
+      "vc_score": 0.78,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_380_suf",
+      "probe_score": 0.7185519139283012,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "hotpot_26_suf",
+      "probe_score": 0.8104697064951951,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_1784_suf",
+      "probe_score": 0.6351657761576355,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "hotpot_2114_suf",
+      "probe_score": 0.6735091339361595,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_2598_suf",
+      "probe_score": 0.5838509189022419,
+      "vc_score": 0.15,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "squad_5004_insuf",
+      "probe_score": 0.21153767580782193,
+      "vc_score": 0.82,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "hotpot_1565_suf",
+      "probe_score": 0.7212955805176942,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "squad_11165_insuf",
+      "probe_score": 0.20067750992608052,
+      "vc_score": 0.72,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "hotpot_1287_suf",
+      "probe_score": 0.5426769801922274,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_853_suf",
+      "probe_score": 0.7109085390539276,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "hotpot_2570_suf",
+      "probe_score": 0.745904103294903,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_887_suf",
+      "probe_score": 0.6217409360488028,
+      "vc_score": 0.2,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "eli5_1124_insuf",
+      "probe_score": 0.47815824733204415,
+      "vc_score": 0.65,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_147_insuf",
+      "probe_score": 0.2521993232775065,
+      "vc_score": 0.78,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "squad_6810_insuf",
+      "probe_score": 0.1935657392923782,
+      "vc_score": 0.78,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "hotpot_1542_suf",
+      "probe_score": 0.7594924384722855,
+      "vc_score": 0.1,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q1",
+      "question_type": "multi_hop"
+    }
+  ],
+  "probe_wrong_vc_right": [
+    {
+      "condition_id": "squad_2996_suf",
+      "probe_score": 0.3551523621456484,
+      "vc_score": 0.95,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "squad_7842_suf",
+      "probe_score": 0.40502147205648614,
+      "vc_score": 0.97,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "squad_10285_suf",
+      "probe_score": 0.4100212513758602,
+      "vc_score": 0.92,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "eli5_822_suf",
+      "probe_score": 0.4557515938359509,
+      "vc_score": 0.88,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "eli5_356_suf",
+      "probe_score": 0.47645669230629656,
+      "vc_score": 0.78,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_2821_insuf",
+      "probe_score": 0.7668289898102258,
+      "vc_score": 0.1,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "squad_9406_insuf",
+      "probe_score": 0.6804166758464247,
+      "vc_score": 0.2,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q3",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "squad_4713_insuf",
+      "probe_score": 0.5371057617253358,
+      "vc_score": 0.1,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "eli5_1298_suf",
+      "probe_score": 0.3059990072624433,
+      "vc_score": 0.7,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "squad_3959_insuf",
+      "probe_score": 0.8764989712898199,
+      "vc_score": 0.25,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "eli5_1372_suf",
+      "probe_score": 0.2548496804908355,
+      "vc_score": 0.6,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "eli5_1960_insuf",
+      "probe_score": 0.5027895303550862,
+      "vc_score": 0.35,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "squad_2991_suf",
+      "probe_score": 0.36885748907117366,
+      "vc_score": 0.95,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "eli5_81_suf",
+      "probe_score": 0.37451533027456524,
+      "vc_score": 0.78,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "squad_7817_suf",
+      "probe_score": 0.44032450361263226,
+      "vc_score": 0.97,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "squad_7983_suf",
+      "probe_score": 0.35055930684544856,
+      "vc_score": 0.82,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "hotpot_2128_suf",
+      "probe_score": 0.42302570596347316,
+      "vc_score": 0.95,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "squad_1115_insuf",
+      "probe_score": 0.5759896128353538,
+      "vc_score": 0.15,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "squad_10927_insuf",
+      "probe_score": 0.5080395959432974,
+      "vc_score": 0.3,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "eli5_1110_suf",
+      "probe_score": 0.3681463597849413,
+      "vc_score": 0.95,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_1687_insuf",
+      "probe_score": 0.5610177379249621,
+      "vc_score": 0.1,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_1115_insuf",
+      "probe_score": 0.573267096808157,
+      "vc_score": 0.1,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "eli5_1653_insuf",
+      "probe_score": 0.823410725234667,
+      "vc_score": 0.35,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_2551_insuf",
+      "probe_score": 0.6953567293810068,
+      "vc_score": 0.2,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "eli5_1108_suf",
+      "probe_score": 0.4527571860708232,
+      "vc_score": 0.85,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_1833_insuf",
+      "probe_score": 0.5114717976310418,
+      "vc_score": 0.1,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "hotpot_558_insuf",
+      "probe_score": 0.6208592773407693,
+      "vc_score": 0.1,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "comparative"
+    },
+    {
+      "condition_id": "eli5_1498_insuf",
+      "probe_score": 0.502378828014409,
+      "vc_score": 0.2,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_2022_insuf",
+      "probe_score": 0.6146690843807748,
+      "vc_score": 0.3,
+      "sufficient": false,
+      "own_pk": true,
+      "quadrant": "Q4",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "eli5_223_insuf",
+      "probe_score": 0.5635343956871789,
+      "vc_score": 0.0,
+      "sufficient": false,
+      "own_pk": false,
+      "quadrant": "Q4",
+      "question_type": "subjective"
+    },
+    {
+      "condition_id": "hotpot_237_suf",
+      "probe_score": 0.462173818897301,
+      "vc_score": 1.0,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "multi_hop"
+    },
+    {
+      "condition_id": "squad_5004_suf",
+      "probe_score": 0.38430512861600336,
+      "vc_score": 1.0,
+      "sufficient": true,
+      "own_pk": true,
+      "quadrant": "Q2",
+      "question_type": "factual"
+    },
+    {
+      "condition_id": "eli5_332_suf",
+      "probe_score": 0.3264618756836361,
+      "vc_score": 0.95,
+      "sufficient": true,
+      "own_pk": false,
+      "quadrant": "Q2",
+      "question_type": "subjective"
+    }
+  ],
+  "counts": {
+    "both_right": 353,
+    "probe_right_vc_wrong": 80,
+    "probe_wrong_vc_right": 33,
+    "both_wrong": 34
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "training": {
+    "sources": [
+      "hotpotqa",
+      "nq",
+      "triviaqa"
+    ],
+    "n_train": 1723,
+    "n_val": 416,
+    "best_epoch": 3,
+    "val_auroc_best": 0.9478319156804733,
+    "log": [
+      {
+        "epoch": 1,
+        "pair_loss": 0.45814796730324076,
+        "bce_loss": 1.267794320428813,
+        "val_auroc": 0.8738211908284024,
+        "elapsed_min": 0.8760883967081706
+      },
+      {
+        "epoch": 2,
+        "pair_loss": 0.14875849971064814,
+        "bce_loss": 0.8412962456544241,
+        "val_auroc": 0.9232387204142012,
+        "elapsed_min": 0.8132377386093139
+      },
+      {
+        "epoch": 3,
+        "pair_loss": 0.05294476615058051,
+        "bce_loss": 0.4893765798597424,
+        "val_auroc": 0.9478319156804733,
+        "elapsed_min": 0.819571856657664
+      },
+      {
+        "epoch": 4,
+        "pair_loss": 0.030609623149589257,
+        "bce_loss": 0.3630819527639283,
+        "val_auroc": 0.9455667529585798,
+        "elapsed_min": 0.8210577209790547
+      },
+      {
+        "epoch": 5,
+        "pair_loss": 0.014970409373442331,
+        "bce_loss": 0.25832052111918863,
+        "val_auroc": 0.9410133136094674,
+        "elapsed_min": 0.8199165622393291
+      },
+      {
+        "epoch": 6,
+        "pair_loss": 0.009579077677766758,
+        "bce_loss": 0.16642019134666985,
+        "val_auroc": 0.9342409393491125,
+        "elapsed_min": 0.8247003316879272
+      }
+    ]
+  },
+  "threshold": {
+    "selected_on": "sufficiencybench_val",
+    "value": 0.22,
+    "balanced_accuracy": 0.7661870503569562,
+    "sb_val_auroc": 0.8348429170332798
+  },
+  "sufficiencybench_test": {
+    "auroc_overall": 0.8108191055069615,
+    "auroc_pk0": 0.8109704130694019,
+    "auroc_pk1": 0.8208,
+    "per_type": {
+      "factual": {
+        "auroc": 0.7869828514863015,
+        "n": 642
+      },
+      "multi_hop": {
+        "auroc": 0.9366388893751859,
+        "n": 956
+      },
+      "comparative": {
+        "auroc": 0.9089773164167628,
+        "n": 204
+      },
+      "subjective": {
+        "auroc": 0.6025695739089418,
+        "n": 422
+      }
+    },
+    "gate_acc_t05": 0.7225719424460432,
+    "gate_acc_best_t": 0.727068345323741,
+    "gate_acc_pk_aware": 0.7216726618705036,
+    "n": 2224
+  },
+  "sciq": null
+}
