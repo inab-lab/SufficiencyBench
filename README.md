@@ -74,8 +74,9 @@ The ordered runbook is [`REPLICATION.md`](REPLICATION.md). Main entry points:
 | Retrieved-context experiment | `src/evaluation/retrieved_context_eval.py` with `scripts/run_retrieved_ctx.sh` |
 | Activation steering | `scripts/run_steering_mistral.py`, `scripts/run_steering_random_control.py` |
 | Standard QPP predictors (WIG, NQC, SMV, clarity) | `src/evaluation/qpp_predictors.py` |
-| Dimension-matched probes, output readouts, splice and document-swap controls | `scripts/dimension_matched_probes.py`, `src/methods/output_readouts.py`, `src/evaluation/splice_controls.py`, `src/evaluation/docswap_control.py` |
+| Dimension-matched probes, output readouts, splice and document-swap controls | `scripts/dimension_matched_probes.py`, `src/methods/output_readouts.py`, `src/evaluation/splice_controls.py` (+ `splice_by_source.py`, `splice_hotpot_strata.py`, `splice_augmented_probe.py`), `src/evaluation/docswap_control.py` |
 | Text-only encoder on retrieved contexts | `src/evaluation/train_sufficiencyprobe_retrieved.py` |
+| Supervision-matched output readout and leave-one-source-out transfer (Tables 6 and 8) | `scripts/supervision_matched_check.py`, `scripts/supervision_matched_check_v2.py` |
 
 The experiments need GPUs and the open-weight models listed in the paper.
 

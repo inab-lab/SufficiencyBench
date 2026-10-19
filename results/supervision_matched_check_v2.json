@@ -1,0 +1,123 @@
+{
+ "llama": {
+  "layer": 14,
+  "n": 2138,
+  "dropped_conditions": {
+   "vc_template": 0,
+   "pyes_raw": 0,
+   "pyes_template": 0
+  },
+  "original_features": [
+   "Response Delta",
+   "Token Prob Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence"
+  ],
+  "extended_features": [
+   "Response Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence",
+   "vc_template",
+   "pyes_raw",
+   "pyes_template"
+  ],
+  "A_original_readout_cv": 0.8375399580489709,
+  "A_original_nonoracle_cv": 0.745246818888639,
+  "A_extended_nonoracle_cv": 0.8139217211647929,
+  "A_extended_oracle_cv": 0.8550195535199399,
+  "A_best_single_output_feature": 0.8064271531842617,
+  "A_best_single_output_feature_name": "pyes_raw",
+  "single_feature_auroc": {
+   "Response Delta": 0.5196327141020738,
+   "Verbalized Comparison": 0.6365276728904818,
+   "verbalized_confidence": 0.7171009511175128,
+   "vc_template": 0.769733566336268,
+   "pyes_raw": 0.8064271531842617,
+   "pyes_template": 0.7846505087240465,
+   "Token Prob Delta": 0.7540960008260695
+  },
+  "A_standard_probe_cv": 0.8995214222396458,
+  "A_csp_probe_cv": 0.9041899399787007
+ },
+ "mistral": {
+  "layer": 13,
+  "n": 2138,
+  "dropped_conditions": {
+   "vc_template": 0,
+   "pyes_raw": 0,
+   "pyes_template": 0
+  },
+  "original_features": [
+   "Response Delta",
+   "Token Prob Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence"
+  ],
+  "extended_features": [
+   "Response Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence",
+   "vc_template",
+   "pyes_raw",
+   "pyes_template"
+  ],
+  "A_original_readout_cv": 0.8262974497729622,
+  "A_original_nonoracle_cv": 0.7342344549735245,
+  "A_extended_nonoracle_cv": 0.7492537809743246,
+  "A_extended_oracle_cv": 0.838815815380469,
+  "A_best_single_output_feature": 0.7798857328872791,
+  "A_best_single_output_feature_name": "Token Prob Delta",
+  "single_feature_auroc": {
+   "Response Delta": 0.5812234579233978,
+   "Verbalized Comparison": 0.6515688757316709,
+   "verbalized_confidence": 0.699537786116257,
+   "vc_template": 0.7101226765701665,
+   "pyes_raw": 0.7699243323844618,
+   "pyes_template": 0.7744650893756437,
+   "Token Prob Delta": 0.7798857328872791
+  },
+  "A_standard_probe_cv": 0.9146199424026547,
+  "A_csp_probe_cv": 0.9033262423201351
+ },
+ "qwen": {
+  "layer": 19,
+  "n": 2138,
+  "dropped_conditions": {
+   "vc_template": 0,
+   "pyes_raw": 0,
+   "pyes_template": 0
+  },
+  "original_features": [
+   "Response Delta",
+   "Token Prob Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence"
+  ],
+  "extended_features": [
+   "Response Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence",
+   "vc_template",
+   "pyes_raw",
+   "pyes_template"
+  ],
+  "A_original_readout_cv": 0.8294022109609971,
+  "A_original_nonoracle_cv": 0.7790360364065627,
+  "A_extended_nonoracle_cv": 0.806306830562121,
+  "A_extended_oracle_cv": 0.8523120757533729,
+  "A_best_single_output_feature": 0.821200145962279,
+  "A_best_single_output_feature_name": "pyes_template",
+  "single_feature_auroc": {
+   "Response Delta": 0.5403216420581382,
+   "Verbalized Comparison": 0.6376639559802968,
+   "verbalized_confidence": 0.7800817493771663,
+   "vc_template": 0.7476217686812904,
+   "pyes_raw": 0.8186418682471662,
+   "pyes_template": 0.821200145962279,
+   "Token Prob Delta": 0.7368723643876541
+  },
+  "A_standard_probe_cv": 0.9003422412910486,
+  "A_csp_probe_cv": 0.8915993807979095
+ },
+ "_discrepancies_vs_original": []
+}

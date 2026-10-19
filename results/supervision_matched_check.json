@@ -1,0 +1,221 @@
+{
+ "llama": {
+  "layer": 14,
+  "n": 2138,
+  "output_features": [
+   "Response Delta",
+   "Token Prob Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence"
+  ],
+  "A_trained_output_readout_cv": 0.8375399580489709,
+  "A_best_single_output_feature": 0.7540960008260695,
+  "A_standard_probe_cv": 0.899523172386877,
+  "A_csp_probe_cv": 0.9041899399787007,
+  "B_leave_one_source_out": {
+   "std_heldout_eli5": 0.6589474629949912,
+   "std_insource_eli5": 0.7561824756856315,
+   "csp_heldout_eli5": 0.6654612430089171,
+   "csp_insource_eli5": 0.7755216639338739,
+   "std_heldout_hotpot": 0.8581020793950851,
+   "std_insource_hotpot": 0.9409179584120984,
+   "csp_heldout_hotpot": 0.8590396975425331,
+   "csp_insource_hotpot": 0.9338223062381854,
+   "std_heldout_squad": 0.8894604752213163,
+   "std_insource_squad": 0.9173419570727566,
+   "csp_heldout_squad": 0.8808825181985042,
+   "csp_insource_squad": 0.9131715965987839
+  },
+  "A2_output_readout_subsets": {
+   "vc_only": {
+    "features": [
+     "verbalized_confidence"
+    ],
+    "overall": 0.7109491836000703,
+    "per_source": {
+     "squad": 0.7604227796576308,
+     "hotpot": 0.7228007561436671,
+     "eli5": 0.6029963388064059
+    }
+   },
+   "non_oracle": {
+    "features": [
+     "verbalized_confidence",
+     "Verbalized Comparison",
+     "Response Delta"
+    ],
+    "overall": 0.745246818888639,
+    "per_source": {
+     "squad": 0.7894654696649976,
+     "hotpot": 0.7706344045368619,
+     "eli5": 0.5946631926506591
+    }
+   },
+   "all_incl_oracle": {
+    "features": [
+     "Response Delta",
+     "Token Prob Delta",
+     "Verbalized Comparison",
+     "verbalized_confidence"
+    ],
+    "overall": 0.8375399580489709,
+    "per_source": {
+     "squad": 0.886301489592828,
+     "hotpot": 0.8687122873345936,
+     "eli5": 0.7235461916848228
+    }
+   },
+   "zero_shot_vc_per_source": {
+    "squad": 0.7596798561600219,
+    "hotpot": 0.7321739130434782,
+    "eli5": 0.6084544372318682
+   }
+  }
+ },
+ "mistral": {
+  "layer": 13,
+  "n": 2138,
+  "output_features": [
+   "Response Delta",
+   "Token Prob Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence"
+  ],
+  "A_trained_output_readout_cv": 0.8262974497729622,
+  "A_best_single_output_feature": 0.7798857328872791,
+  "A_standard_probe_cv": 0.9146199424026547,
+  "A_csp_probe_cv": 0.9033262423201351,
+  "B_leave_one_source_out": {
+   "std_heldout_eli5": 0.7427056894499225,
+   "std_insource_eli5": 0.8315626333640305,
+   "csp_heldout_eli5": 0.7405044810314234,
+   "csp_insource_eli5": 0.8163787875384649,
+   "std_heldout_hotpot": 0.8469141776937619,
+   "std_insource_hotpot": 0.9320529300567109,
+   "csp_heldout_hotpot": 0.8529058601134216,
+   "csp_insource_hotpot": 0.9259251417769376,
+   "std_heldout_squad": 0.8698572837718038,
+   "std_insource_squad": 0.9167551099401915,
+   "csp_heldout_squad": 0.863926381900136,
+   "csp_insource_squad": 0.9051680005993332
+  },
+  "A2_output_readout_subsets": {
+   "vc_only": {
+    "features": [
+     "verbalized_confidence"
+    ],
+    "overall": 0.6867621488657734,
+    "per_source": {
+     "squad": 0.7562212039106494,
+     "hotpot": 0.6847319470699433,
+     "eli5": 0.5811077918285753
+    }
+   },
+   "non_oracle": {
+    "features": [
+     "verbalized_confidence",
+     "Verbalized Comparison",
+     "Response Delta"
+    ],
+    "overall": 0.7342344549735245,
+    "per_source": {
+     "squad": 0.768794715878585,
+     "hotpot": 0.7565822306238187,
+     "eli5": 0.6015475842860672
+    }
+   },
+   "all_incl_oracle": {
+    "features": [
+     "Response Delta",
+     "Token Prob Delta",
+     "Verbalized Comparison",
+     "verbalized_confidence"
+    ],
+    "overall": 0.8262974497729622,
+    "per_source": {
+     "squad": 0.8953726479291788,
+     "hotpot": 0.8589187145557656,
+     "eli5": 0.7218166707845736
+    }
+   },
+   "zero_shot_vc_per_source": {
+    "squad": 0.7623081821473611,
+    "hotpot": 0.7029928166351606,
+    "eli5": 0.5870038858066979
+   }
+  }
+ },
+ "qwen": {
+  "layer": 19,
+  "n": 2138,
+  "output_features": [
+   "Response Delta",
+   "Token Prob Delta",
+   "Verbalized Comparison",
+   "verbalized_confidence"
+  ],
+  "A_trained_output_readout_cv": 0.8294022109609971,
+  "A_best_single_output_feature": 0.7800817493771663,
+  "A_standard_probe_cv": 0.9003413662174329,
+  "A_csp_probe_cv": 0.8916002558715252,
+  "B_leave_one_source_out": {
+   "std_heldout_eli5": 0.697176613283619,
+   "std_insource_eli5": 0.7795646998045866,
+   "csp_heldout_eli5": 0.6701331955706296,
+   "csp_insource_eli5": 0.766177758810449,
+   "std_heldout_hotpot": 0.8331100189035916,
+   "std_insource_hotpot": 0.9349595463137995,
+   "csp_heldout_hotpot": 0.8359984877126654,
+   "csp_insource_hotpot": 0.9347448015122873,
+   "std_heldout_squad": 0.878510157449837,
+   "std_insource_squad": 0.9082520695726005,
+   "csp_heldout_squad": 0.8742149358838293,
+   "csp_insource_squad": 0.9072906391639302
+  },
+  "A2_output_readout_subsets": {
+   "vc_only": {
+    "features": [
+     "verbalized_confidence"
+    ],
+    "overall": 0.779416255892527,
+    "per_source": {
+     "squad": 0.8489118355829139,
+     "hotpot": 0.7922283553875237,
+     "eli5": 0.6257496462343614
+    }
+   },
+   "non_oracle": {
+    "features": [
+     "verbalized_confidence",
+     "Verbalized Comparison",
+     "Response Delta"
+    ],
+    "overall": 0.7790360364065627,
+    "per_source": {
+     "squad": 0.8402402327410756,
+     "hotpot": 0.7924536862003779,
+     "eli5": 0.6308595943487343
+    }
+   },
+   "all_incl_oracle": {
+    "features": [
+     "Response Delta",
+     "Token Prob Delta",
+     "Verbalized Comparison",
+     "verbalized_confidence"
+    ],
+    "overall": 0.8294022109609971,
+    "per_source": {
+     "squad": 0.893324926019803,
+     "hotpot": 0.8520559546313798,
+     "eli5": 0.7191886974686102
+    }
+   },
+   "zero_shot_vc_per_source": {
+    "squad": 0.8511156338573337,
+    "hotpot": 0.7934684310018904,
+    "eli5": 0.6221670672267021
+   }
+  }
+ }
+}

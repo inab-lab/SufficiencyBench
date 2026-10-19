@@ -212,9 +212,13 @@ $PY src/methods/answerability_baselines.py --device cuda:0 --batch-size 16   # -
 $PY scripts/retrieved_ctx_paired_vs_baselines.py            # paired tests, probes vs E5 cosine and vs the retriever-score regression -> results/retrieved_ctx_paired_vs_baselines.{json,md}
 $PY src/evaluation/qpp_predictors.py                          # WIG, NQC, SMV, clarity, sigma_max from the Lucene index -> results/retrieved_ctx_qpp_proper.{json,md}
 $PY scripts/dimension_matched_probes.py                       # probes on PCA / random projections of the stored states -> results/dimension_matched_probes.{json,md}
+$PY scripts/supervision_matched_check.py                      # leave-one-source-out transfer (Table 8) and the original trained output readout -> results/supervision_matched_check.json
+$PY scripts/supervision_matched_check_v2.py                   # trained output readout incl. the chat-template and P(Yes) readouts (Table 6) -> results/supervision_matched_check_v2.{json,md}
 bash scripts/run_sprobe_retrieved.sh                          # GPU: text-only SufficiencyProbe transferred to and retrained on the retrieved contexts -> results/sufficiencyprobe_retrieved/
 bash scripts/run_output_readouts.sh                           # GPU: chat-template and logit-based (P(Yes)) output readouts -> results/<model>/output_readouts.json, results/output_readouts_summary.md
 bash scripts/run_splice_controls.sh                           # GPU: context-only probe and spliced-but-sufficient control -> results/splice_controls.{json,md}
+$PY src/evaluation/splice_by_source.py; $PY src/evaluation/splice_hotpot_strata.py   # per-source breakdown and HotpotQA supporting-fact strata -> results/splice_controls_by_source.{json,md}
+$PY src/evaluation/splice_controls.py build --split train; ... extract --model llama --split train --target splice; $PY src/evaluation/splice_augmented_probe.py   # GPU: Llama probes retrained with edited sufficient contexts -> results/splice_augmented_probe.{json,md}
 bash scripts/run_docswap_control.sh                           # GPU: document-swap counterpart of the test split -> results/docswap_control.{json,md}
 $PY src/evaluation/retrieved_context_eval.py build --retriever e5 --k 5 --tag e5_k5   # dense-retriever contexts; then run_retrieved_ctx.sh <model> <gpu> e5_k5
 ```
