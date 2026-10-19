@@ -11,10 +11,10 @@ from src.evaluation import retrieved_context_eval as R
 from src.analysis.store_baseline_scores import load_best_layers
 
 import argparse
-_ap = argparse.ArgumentParser(); _ap.add_argument("--tag", default="bm25_k5"); _args = _ap.parse_args()
+_ap = argparse.ArgumentParser(); _ap.add_argument("--tag", default="bm25_k5"); _ap.add_argument("--models", default="llama,mistral,qwen"); _args = _ap.parse_args()
 TAG, B, SEED, LAB = _args.tag, 2000, 0, "support"
 SFX = "" if TAG == "bm25_k5" else "_" + TAG
-MODELS = ["llama", "mistral", "qwen"]
+MODELS = _args.models.split(",")
 PROBES = ["Standard (transfer)", "CSP (transfer)", "Standard (retrained)", "CSP (retrained)"]
 BASES = {"E5": "E5 cosine", "QPP": "QPP logreg"}
 
