@@ -1,6 +1,6 @@
 # SufficiencyBench
 
-**Will the Retrieved Context Suffice? Confound-Controlled Evaluation of Sufficiency Predictors for Retrieval-Augmented Generation**
+**Will Retrieved Context Suffice? Confound-Controlled Evaluation of Sufficiency Predictors for Retrieval-Augmented Generation**
 
 Guillermo Llopis-García (INAB and University of Alicante), Daniel Ruiz-Fernández (University of Alicante), David del Rosario Gilabert (INAB, corresponding author).
 Manuscript under review at ACM Transactions on Information Systems.
@@ -122,7 +122,7 @@ answer = p_sufficient >= 0.67     # the variant's threshold from the table above
 
 ```bibtex
 @misc{llopis2026sufficiency,
-  title  = {Will the Retrieved Context Suffice? Confound-Controlled Evaluation of Sufficiency Predictors for Retrieval-Augmented Generation},
+  title  = {Will Retrieved Context Suffice? Confound-Controlled Evaluation of Sufficiency Predictors for Retrieval-Augmented Generation},
   author = {Llopis-Garc{\'\i}a, Guillermo and Ruiz-Fern{\'a}ndez, Daniel and del Rosario Gilabert, David},
   year   = {2026},
   note   = {Manuscript under review at ACM Transactions on Information Systems},
