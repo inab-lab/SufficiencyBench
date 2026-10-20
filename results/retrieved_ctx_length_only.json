@@ -1,0 +1,116 @@
+{
+ "bm25_k5": {
+  "n_test": 1500,
+  "pos_rate": 0.44466666666666665,
+  "label_mismatch_with_scores": 0,
+  "n_train": 3000,
+  "train_pos": 0.42766666666666664,
+  "chars_vs_context_chars_mismatch": 0,
+  "chars": {
+   "auroc": 0.5773526802025157,
+   "ci95": [
+    0.5492195998563622,
+    0.6073047437890786
+   ],
+   "raw_auroc_longer_is_sufficient": 0.4226473197974842,
+   "direction": "longer context => LESS sufficient (AUROC reported as 1-AUC)",
+   "mean_sufficient": 2731.038980509745,
+   "mean_insufficient": 2959.126050420168,
+   "sd_sufficient": 799.9036664136432,
+   "sd_insufficient": 902.3056060339641
+  },
+  "words": {
+   "auroc": 0.5842918876696106,
+   "ci95": [
+    0.5566278888891832,
+    0.6138411708481919
+   ],
+   "raw_auroc_longer_is_sufficient": 0.4157081123303894,
+   "direction": "longer context => LESS sufficient (AUROC reported as 1-AUC)",
+   "mean_sufficient": 442.5817091454273,
+   "mean_insufficient": 483.3217286914766,
+   "sd_sufficient": 130.31605161538255,
+   "sd_insufficient": 148.59056832400486
+  },
+  "prompt_tokens(llama, whole prompt)": {
+   "auroc": 0.5734479698926047,
+   "ci95": [
+    0.5456219596852203,
+    0.6030916180958584
+   ],
+   "raw_auroc_longer_is_sufficient": 0.4265520301073953,
+   "direction": "longer context => LESS sufficient (AUROC reported as 1-AUC)",
+   "mean_sufficient": 688.1394302848576,
+   "mean_insufficient": 736.2593037214885,
+   "sd_sufficient": 178.03291322219067,
+   "sd_insufficient": 198.92152195585646
+  },
+  "logreg_logchars": {
+   "auroc": 0.5773526802025157,
+   "ci95": [
+    0.5492195998563622,
+    0.6073047437890786
+   ],
+   "coef": -0.9547170376946862,
+   "intercept": 7.2420482757499025,
+   "note": "fit on train split, evaluated on test; AUROC unsigned (coef sign learned)"
+  }
+ },
+ "e5_k5": {
+  "n_test": 1500,
+  "pos_rate": 0.662,
+  "label_mismatch_with_scores": 0,
+  "n_train": 3000,
+  "train_pos": 0.665,
+  "chars_vs_context_chars_mismatch": 0,
+  "chars": {
+   "auroc": 0.575271476270779,
+   "ci95": [
+    0.5447058584877117,
+    0.6037649943326899
+   ],
+   "raw_auroc_longer_is_sufficient": 0.4247285237292209,
+   "direction": "longer context => LESS sufficient (AUROC reported as 1-AUC)",
+   "mean_sufficient": 2387.0211480362536,
+   "mean_insufficient": 2575.5641025641025,
+   "sd_sufficient": 642.8134758301612,
+   "sd_insufficient": 715.5032196508297
+  },
+  "words": {
+   "auroc": 0.5828044834551922,
+   "ci95": [
+    0.5522827651159922,
+    0.6113982150128767
+   ],
+   "raw_auroc_longer_is_sufficient": 0.4171955165448077,
+   "direction": "longer context => LESS sufficient (AUROC reported as 1-AUC)",
+   "mean_sufficient": 386.08358509566966,
+   "mean_insufficient": 419.9940828402367,
+   "sd_sufficient": 104.41503512115737,
+   "sd_insufficient": 117.30693553558771
+  },
+  "prompt_tokens(llama, whole prompt)": {
+   "auroc": 0.5766479756719125,
+   "ci95": [
+    0.5465488402495438,
+    0.6056734919375494
+   ],
+   "raw_auroc_longer_is_sufficient": 0.4233520243280875,
+   "direction": "longer context => LESS sufficient (AUROC reported as 1-AUC)",
+   "mean_sufficient": 610.7865055387714,
+   "mean_insufficient": 651.7573964497042,
+   "sd_sufficient": 143.8498529737805,
+   "sd_insufficient": 155.82555588032045
+  },
+  "logreg_logchars": {
+   "auroc": 0.575271476270779,
+   "ci95": [
+    0.5447058584877117,
+    0.6037649943326899
+   ],
+   "coef": -0.7491262916590916,
+   "intercept": 6.5022611562007535,
+   "note": "fit on train split, evaluated on test; AUROC unsigned (coef sign learned)"
+  }
+ }
+}

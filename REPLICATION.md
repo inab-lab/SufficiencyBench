@@ -222,6 +222,7 @@ $PY src/evaluation/splice_controls.py build --split train; ... extract --model l
 bash scripts/run_docswap_control.sh                           # GPU: document-swap counterpart of the test split -> results/docswap_control.{json,md}
 $PY src/evaluation/retrieved_context_eval.py build --retriever e5 --k 5 --tag e5_k5   # dense-retriever contexts; then run_retrieved_ctx.sh <model> <gpu> e5_k5, retrieved_ctx_paired_vs_baselines.py --tag e5_k5, retrieved_ctx_e5_summary.py -> results/retrieved_ctx_e5_summary.md
 $PY src/evaluation/retrieved_context_eval.py build --k 3 --tag bm25_k3; ... extract --model llama --split test --tag bm25_k3; $PY scripts/retrieved_ctx_k_transfer.py --model llama --tags bm25_k3 bm25_k5 bm25_k10   # retrieval-depth sensitivity, transferred probes -> results/retrieved_ctx_k_sensitivity.{json,md}
+$PY scripts/retrieved_ctx_length_only.py   # length-only control on BM25 and E5 top-5 contexts (CPU) -> results/retrieved_ctx_length_only.{json,md}
 ```
 
 ---
